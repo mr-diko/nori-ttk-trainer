@@ -1,6 +1,6 @@
 import React from 'react';
 import { useApp } from '../../context/AppContext';
-import { Layers, Sparkles, AlertCircle, CheckCircle2, Bookmark, ChefHat } from 'lucide-react';
+import { Layers, Sparkles, AlertCircle, CheckCircle2, Bookmark } from 'lucide-react';
 
 interface DeckOption {
   id: string;
@@ -22,7 +22,6 @@ export const DeckSelector: React.FC<DeckSelectorProps> = ({
 }) => {
   const { menuData, cardProgress, customDecks } = useApp();
 
-  // Calculate deck counts
   const totalDishes = menuData.dishes.length;
   
   const learningCount = menuData.dishes.filter(
@@ -33,61 +32,58 @@ export const DeckSelector: React.FC<DeckSelectorProps> = ({
     d => cardProgress[d.id]?.status === 'mastered'
   ).length;
 
-  // Build standard decks
   const standardDecks: DeckOption[] = [
     {
       id: 'all',
       name: 'Усі страви меню',
       count: totalDishes,
-      icon: <Sparkles className="w-4 h-4 text-emerald-400" />,
+      icon: <Sparkles className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />,
       description: 'Повне меню з усіх категорій',
-      badgeColor: 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30',
+      badgeColor: 'bg-emerald-100 dark:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-500/30',
     },
     {
       id: 'learning',
       name: 'Потребують повторення',
       count: learningCount,
-      icon: <AlertCircle className="w-4 h-4 text-rose-400" />,
+      icon: <AlertCircle className="w-4 h-4 text-rose-500 dark:text-rose-400" />,
       description: 'Страви, де були допущені помилки',
-      badgeColor: 'bg-rose-500/20 text-rose-300 border-rose-500/30',
+      badgeColor: 'bg-rose-100 dark:bg-rose-500/20 text-rose-800 dark:text-rose-300 border-rose-300 dark:border-rose-500/30',
     },
     {
       id: 'mastered',
       name: 'Засвоєні страви',
       count: masteredCount,
-      icon: <CheckCircle2 className="w-4 h-4 text-sky-400" />,
+      icon: <CheckCircle2 className="w-4 h-4 text-sky-600 dark:text-sky-400" />,
       description: 'Страви, вивчені на відмінно',
-      badgeColor: 'bg-sky-500/20 text-sky-300 border-sky-500/30',
+      badgeColor: 'bg-sky-100 dark:bg-sky-500/20 text-sky-800 dark:text-sky-300 border-sky-300 dark:border-sky-500/30',
     },
   ];
 
-  // Category decks
   const categoryDecks: DeckOption[] = menuData.categories
     .filter(c => c !== 'Заготовки' && c !== 'Набори 2026')
     .map(cat => ({
       id: `cat:${cat}`,
       name: cat,
       count: menuData.dishes.filter(d => d.category === cat).length,
-      icon: <Bookmark className="w-4 h-4 text-amber-400" />,
+      icon: <Bookmark className="w-4 h-4 text-amber-500 dark:text-amber-400" />,
       description: `ТТК категорії «${cat}»`,
-      badgeColor: 'bg-amber-500/20 text-amber-300 border-amber-500/30',
+      badgeColor: 'bg-amber-100 dark:bg-amber-500/20 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-500/30',
     }));
 
-  // Custom user decks
   const userDecks: DeckOption[] = customDecks.map(deck => ({
     id: `custom:${deck.id}`,
     name: deck.name,
     count: deck.dishIds.length,
-    icon: <Layers className="w-4 h-4 text-purple-400" />,
+    icon: <Layers className="w-4 h-4 text-purple-600 dark:text-purple-400" />,
     description: deck.description || 'Власна колода користувача',
-    badgeColor: 'bg-purple-500/20 text-purple-300 border-purple-500/30',
+    badgeColor: 'bg-purple-100 dark:bg-purple-500/20 text-purple-800 dark:text-purple-300 border-purple-300 dark:border-purple-500/30',
   }));
 
   return (
-    <div className="bg-slate-800/60 border border-slate-700/60 rounded-2xl p-4 sm:p-5 backdrop-blur-md shadow-xl">
+    <div className="bg-white/80 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-4 sm:p-5 backdrop-blur-md shadow-sm dark:shadow-xl">
       <div className="flex items-center gap-2 mb-3">
-        <Layers className="w-5 h-5 text-emerald-400" />
-        <h2 className="text-base sm:text-lg font-bold text-white">
+        <Layers className="w-5 h-5 text-emerald-600 dark:text-emerald-400" />
+        <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
           Оберіть колоду для навчання
         </h2>
       </div>
@@ -95,7 +91,7 @@ export const DeckSelector: React.FC<DeckSelectorProps> = ({
       <div className="space-y-4">
         {/* Main decks */}
         <div>
-          <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-2">
+          <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-2">
             Основні колоди:
           </span>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
@@ -108,17 +104,17 @@ export const DeckSelector: React.FC<DeckSelectorProps> = ({
                   onClick={() => onSelectDeck(deck.id)}
                   className={`p-3 rounded-xl border text-left flex items-center justify-between transition-all ${
                     isSelected
-                      ? 'bg-emerald-950/60 border-emerald-500 shadow-md ring-1 ring-emerald-500'
-                      : 'bg-slate-900/60 border-slate-800 hover:border-slate-700 hover:bg-slate-850'
+                      ? 'bg-emerald-50 dark:bg-emerald-950/60 border-emerald-500 shadow-md ring-1 ring-emerald-500'
+                      : 'bg-slate-50 dark:bg-slate-900/60 border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
                   }`}
                 >
                   <div className="flex items-center gap-2.5">
                     {deck.icon}
                     <div>
-                      <div className="text-xs sm:text-sm font-semibold text-white">
+                      <div className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">
                         {deck.name}
                       </div>
-                      <div className="text-[11px] text-slate-400 truncate max-w-[150px]">
+                      <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate max-w-[150px]">
                         {deck.description}
                       </div>
                     </div>
@@ -135,7 +131,7 @@ export const DeckSelector: React.FC<DeckSelectorProps> = ({
         {/* User decks if any */}
         {userDecks.length > 0 && (
           <div>
-            <span className="text-[11px] font-bold text-purple-400 uppercase tracking-wider block mb-2">
+            <span className="text-[11px] font-bold text-purple-600 dark:text-purple-400 uppercase tracking-wider block mb-2">
               Мої створені колоди:
             </span>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
@@ -148,17 +144,17 @@ export const DeckSelector: React.FC<DeckSelectorProps> = ({
                     onClick={() => onSelectDeck(deck.id)}
                     className={`p-3 rounded-xl border text-left flex items-center justify-between transition-all ${
                       isSelected
-                        ? 'bg-purple-950/60 border-purple-500 shadow-md ring-1 ring-purple-500'
-                        : 'bg-slate-900/60 border-slate-800 hover:border-slate-700 hover:bg-slate-850'
+                        ? 'bg-purple-50 dark:bg-purple-950/60 border-purple-500 shadow-md ring-1 ring-purple-500'
+                        : 'bg-slate-50 dark:bg-slate-900/60 border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700'
                     }`}
                   >
                     <div className="flex items-center gap-2.5">
                       {deck.icon}
                       <div>
-                        <div className="text-xs sm:text-sm font-semibold text-white">
+                        <div className="text-xs sm:text-sm font-semibold text-slate-900 dark:text-white">
                           {deck.name}
                         </div>
-                        <div className="text-[11px] text-slate-400 truncate max-w-[150px]">
+                        <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate max-w-[150px]">
                           {deck.description}
                         </div>
                       </div>
@@ -175,7 +171,7 @@ export const DeckSelector: React.FC<DeckSelectorProps> = ({
 
         {/* Category Decks Horizontal Scroll */}
         <div>
-          <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-2">
+          <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-2">
             За категоріями страв:
           </span>
           <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
@@ -189,12 +185,12 @@ export const DeckSelector: React.FC<DeckSelectorProps> = ({
                   className={`px-3 py-1.5 rounded-xl border whitespace-nowrap text-xs font-semibold flex items-center gap-2 transition-all ${
                     isSelected
                       ? 'bg-amber-500 text-slate-950 border-amber-400 shadow-md font-bold'
-                      : 'bg-slate-900/70 border-slate-800 text-slate-300 hover:bg-slate-800 hover:text-white'
+                      : 'bg-slate-100 dark:bg-slate-900/70 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800'
                   }`}
                 >
                   <span>{deck.name}</span>
                   <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${
-                    isSelected ? 'bg-slate-900/20 text-slate-950 font-black' : 'bg-slate-800 text-amber-400'
+                    isSelected ? 'bg-slate-900/20 text-slate-950 font-black' : 'bg-slate-200 dark:bg-slate-800 text-amber-800 dark:text-amber-400'
                   }`}>
                     {deck.count}
                   </span>
