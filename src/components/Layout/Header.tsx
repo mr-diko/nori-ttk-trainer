@@ -1,6 +1,6 @@
 import React from 'react';
 import { useApp } from '../../context/AppContext';
-import { BookOpen, Layers, HelpCircle, Settings, Sparkles, Moon, Sun } from 'lucide-react';
+import { BookOpen, Layers, HelpCircle, Settings, Sparkles, Moon, Sun, Zap } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const { 
@@ -10,6 +10,7 @@ export const Header: React.FC = () => {
   } = useApp();
 
   const navItems = [
+    { id: 'kitchen', label: 'Кухня ⚡️', icon: <Zap className="w-4 h-4 text-amber-500 fill-amber-500" /> },
     { id: 'catalog', label: 'Каталог ТТК', icon: <BookOpen className="w-4 h-4" /> },
     { id: 'flashcards', label: 'Флеш-картки', icon: <span className="text-sm">🎴</span> },
     { id: 'exam', label: 'Екзаменатор', icon: <HelpCircle className="w-4 h-4" /> },
@@ -22,7 +23,7 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-3">
         {/* Brand */}
         <div 
-          onClick={() => setCurrentTab('catalog')}
+          onClick={() => setCurrentTab('kitchen')}
           className="flex items-center gap-2.5 cursor-pointer select-none group flex-shrink-0"
         >
           <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 p-0.5 shadow-md shadow-emerald-950 flex items-center justify-center">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useApp } from './context/AppContext';
 import { Header } from './components/Layout/Header';
 import { BottomNav } from './components/Layout/BottomNav';
+import { KitchenView } from './components/Kitchen/KitchenView';
 import { CatalogView } from './components/Catalog/CatalogView';
 import { FlashcardView } from './components/Flashcards/FlashcardView';
 import { ExamView } from './components/Exam/ExamView';
@@ -29,6 +30,10 @@ export default function App() {
       <Header />
 
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 pb-24 md:pb-12">
+        {currentTab === 'kitchen' && (
+          <KitchenView />
+        )}
+
         {currentTab === 'catalog' && (
           <CatalogView onStudyDish={handleStudyDish} />
         )}

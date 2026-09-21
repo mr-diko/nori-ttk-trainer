@@ -1,4 +1,4 @@
-import { CardProgress, CustomDeck, ExamHistoryItem, MenuData } from '../types/ttk';
+import { CardProgress, CustomDeck, ExamHistoryItem, MenuData, TabType } from '../types/ttk';
 
 const STORAGE_KEYS = {
   IGNORE_DECOR: 'nori_ignore_decor',
@@ -8,6 +8,10 @@ const STORAGE_KEYS = {
   DECOR_OVERRIDES: 'nori_decor_overrides',
   CUSTOM_MENU_DATA: 'nori_custom_menu_data',
   EXAM_HISTORY: 'nori_exam_history',
+  PINNED_DISHES: 'nori_pinned_dishes',
+  RECENT_DISHES: 'nori_recent_dishes',
+  WAKE_LOCK: 'nori_wake_lock_enabled',
+  LAST_TAB: 'nori_last_tab',
 };
 
 export const StorageService = {
@@ -200,8 +204,63 @@ export const StorageService = {
     }
   },
 
+  getPinnedDishes(): string[] {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.PINNED_DISHES);
+      return data ? JSON.parse(data) : [];
+    } catch {
+      return [];
+    }
+  },
+
+  togglePinnedDish(id: string): string[] {
+    const list = this.getPinnedDishes();
+    const updated = list.includes(id) ? list.filter(item => item !== id) : [...list, id];
+    localStorage.setItem(STORAGE_KEYS.PINNED_DISHES, JSON.stringify(updated));
+    return updated;
+  },
+
+  getRecentDishes(): string[] {
+    try {
+      const data = localStorage.getItem(STORAGE_KEYS.RECENT_DISHES);
+      return data ? JSON.parse(data) : [];
+    } catch {
+      return [];
+    }
+  },
+
+  addRecentDish(id: string): string[] {
+    const list = this.getRecentDishes().filter(item => item !== id);
+    const updated = [id, ...list].slice(0, 10);
+    localStorage.setItem(STORAGE_KEYS.RECENT_DISHES, JSON.stringify(updated));
+    return updated;
+  },
+
+  getWakeLockPreference(): boolean {
+    const val = localStorage.getItem(STORAGE_KEYS.WAKE_LOCK);
+    return val === 'true';
+  },
+
+  setWakeLockPreference(val: boolean): void {
+    localStorage.setItem(STORAGE_KEYS.WAKE_LOCK, String(val));
+  },
+
+  getLastTab(): TabType {
+    const val = localStorage.getItem(STORAGE_KEYS.LAST_TAB);
+    if (val && ['kitchen', 'catalog', 'flashcards', 'exam', 'decks', 'settings'].includes(val)) {
+      return val as TabType;
+    }
+    return 'kitchen'; // Default is 'kitchen' as requested!
+  },
+
+  setLastTab(tab: TabType): void {
+    localStorage.setItem(STORAGE_KEYS.LAST_TAB, tab);
+  },
+
   resetAllProgress(): void {
     localStorage.removeItem(STORAGE_KEYS.CARD_PROGRESS);
     localStorage.removeItem(STORAGE_KEYS.EXAM_HISTORY);
+    localStorage.removeItem(STORAGE_KEYS.PINNED_DISHES);
+    localStorage.removeItem(STORAGE_KEYS.RECENT_DISHES);
   }
 };

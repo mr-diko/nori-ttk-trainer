@@ -46,6 +46,8 @@ export interface MenuData {
 
 export type CardMasteryStatus = 'new' | 'learning' | 'mastered';
 
+export type TabType = 'kitchen' | 'catalog' | 'flashcards' | 'exam' | 'decks' | 'settings';
+
 export interface CardProgress {
   dishId: string;
   status: CardMasteryStatus;

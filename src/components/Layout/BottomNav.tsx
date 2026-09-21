@@ -1,11 +1,12 @@
 import React from 'react';
 import { useApp } from '../../context/AppContext';
-import { BookOpen, Layers, HelpCircle, Settings } from 'lucide-react';
+import { BookOpen, Layers, HelpCircle, Settings, Zap } from 'lucide-react';
 
 export const BottomNav: React.FC = () => {
   const { currentTab, setCurrentTab } = useApp();
 
   const navItems = [
+    { id: 'kitchen', label: 'Кухня ⚡️', icon: <Zap className="w-5 h-5" /> },
     { id: 'catalog', label: 'Каталог', icon: <BookOpen className="w-5 h-5" /> },
     { id: 'flashcards', label: 'Картки', icon: <span className="text-xl leading-none">🎴</span> },
     { id: 'exam', label: 'Тест', icon: <HelpCircle className="w-5 h-5" /> },

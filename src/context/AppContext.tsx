@@ -1,7 +1,8 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import defaultMenuData from '../data/nori-menu.json';
-import { MenuData, Dish, Ingredient, CardProgress, CustomDeck, ExamHistoryItem } from '../types/ttk';
+import { MenuData, Dish, Ingredient, CardProgress, CustomDeck, ExamHistoryItem, TabType } from '../types/ttk';
 import { StorageService } from '../services/storage';
+import { isWakeLockSupported, requestWakeLock, releaseWakeLock } from '../utils/wakeLock';
 
 interface AppContextType {
   menuData: MenuData;
@@ -19,8 +20,8 @@ interface AppContextType {
   toggleDecorOverride: (ingredientName: string) => void;
   isIngredientDecor: (ing: Ingredient) => boolean;
   getEffectiveIngredients: (dish: Dish) => Ingredient[];
-  currentTab: 'catalog' | 'flashcards' | 'exam' | 'decks' | 'settings';
-  setCurrentTab: (tab: 'catalog' | 'flashcards' | 'exam' | 'decks' | 'settings') => void;
+  currentTab: TabType;
+  setCurrentTab: (tab: TabType) => void;
   selectedCategory: string | null;
   setSelectedCategory: (cat: string | null) => void;
   activeDeckId: string | null;
@@ -30,6 +31,14 @@ interface AppContextType {
   resetProgress: () => void;
   loadNewMenu: (menu: MenuData) => void;
   resetToDefaultMenu: () => void;
+  // Kitchen Mode features
+  pinnedDishes: string[];
+  togglePinnedDish: (id: string) => void;
+  recentDishes: string[];
+  addRecentDish: (id: string) => void;
+  wakeLockActive: boolean;
+  toggleWakeLock: () => Promise<void>;
+  isWakeLockSupported: boolean;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -46,9 +55,20 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [decorOverrides, setDecorOverrides] = useState<Record<string, boolean>>(() => StorageService.getDecorOverrides());
   const [examHistory, setExamHistory] = useState<ExamHistoryItem[]>(() => StorageService.getExamHistory());
 
-  const [currentTab, setCurrentTab] = useState<'catalog' | 'flashcards' | 'exam' | 'decks' | 'settings'>('catalog');
+  // Navigation tab (defaults to 'kitchen')
+  const [currentTab, setCurrentTabState] = useState<TabType>(() => StorageService.getLastTab());
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [activeDeckId, setActiveDeckId] = useState<string | null>(null);
+
+  // Kitchen mode states
+  const [pinnedDishes, setPinnedDishes] = useState<string[]>(() => StorageService.getPinnedDishes());
+  const [recentDishes, setRecentDishes] = useState<string[]>(() => StorageService.getRecentDishes());
+  const [wakeLockActive, setWakeLockActive] = useState<boolean>(() => StorageService.getWakeLockPreference());
+
+  const setCurrentTab = (tab: TabType) => {
+    setCurrentTabState(tab);
+    StorageService.setLastTab(tab);
+  };
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -57,6 +77,47 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       document.documentElement.classList.remove('dark');
     }
   }, [theme]);
+
+  // Screen WakeLock management
+  useEffect(() => {
+    if (wakeLockActive && isWakeLockSupported()) {
+      requestWakeLock();
+    } else {
+      releaseWakeLock();
+    }
+
+    const handleVisibilityChange = async () => {
+      if (document.visibilityState === 'visible' && wakeLockActive) {
+        await requestWakeLock();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [wakeLockActive]);
+
+  const toggleWakeLock = async () => {
+    const next = !wakeLockActive;
+    setWakeLockActive(next);
+    StorageService.setWakeLockPreference(next);
+    if (next) {
+      await requestWakeLock();
+    } else {
+      await releaseWakeLock();
+    }
+  };
+
+  const togglePinnedDish = (id: string) => {
+    const updated = StorageService.togglePinnedDish(id);
+    setPinnedDishes(updated);
+  };
+
+  const addRecentDish = (id: string) => {
+    const updated = StorageService.addRecentDish(id);
+    setRecentDishes(updated);
+  };
 
   const setIgnoreDecor = (val: boolean) => {
     setIgnoreDecorState(val);
@@ -98,7 +159,6 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     if (current[ingredientName] !== undefined) {
       delete current[ingredientName];
     } else {
-      // Find current status
       let defaultStatus = false;
       for (const d of menuData.dishes) {
         const found = d.ingredients.find(i => i.name === ingredientName);
@@ -137,6 +197,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     StorageService.resetAllProgress();
     setCardProgress({});
     setExamHistory([]);
+    setPinnedDishes([]);
+    setRecentDishes([]);
   };
 
   const loadNewMenu = (newMenu: MenuData) => {
@@ -178,6 +240,13 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         resetProgress,
         loadNewMenu,
         resetToDefaultMenu,
+        pinnedDishes,
+        togglePinnedDish,
+        recentDishes,
+        addRecentDish,
+        wakeLockActive,
+        toggleWakeLock,
+        isWakeLockSupported: isWakeLockSupported(),
       }}
     >
       {children}
