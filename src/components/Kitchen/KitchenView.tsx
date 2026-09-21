@@ -309,6 +309,11 @@ export const KitchenView: React.FC = () => {
                     </h3>
                     <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 mt-1">
                       <span className="font-medium">{item.category}</span>
+                      {item.isArchived && (
+                        <span className="text-[10px] font-bold px-1.5 py-0.5 rounded-md bg-amber-100 dark:bg-amber-950/70 text-amber-800 dark:text-amber-300 border border-amber-300/80 dark:border-amber-700/60">
+                          📦 Архів
+                        </span>
+                      )}
                       {'totalWeight' in item && item.totalWeight && (
                         <span className="text-[11px] font-black px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/50 font-mono">
                           {item.totalWeight}

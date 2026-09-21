@@ -17,7 +17,7 @@
   ],
   "dishCount": 101,
   "prepCount": 24,
-  "setCount": 23,
+  "setCount": 27,
   "dishes": [
     {
       "id": "dish-1",
@@ -527,7 +527,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-12.jpg"
+      "image": "images/dishes/dish-12.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-13",
@@ -1087,7 +1088,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-24.jpg"
+      "image": "images/dishes/dish-24.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-25",
@@ -1532,7 +1534,8 @@
           "isDecor": false
         }
       ],
-      "image": "images/dishes/dish-32.jpg"
+      "image": "images/dishes/dish-32.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-33",
@@ -1872,7 +1875,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-40.jpg"
+      "image": "images/dishes/dish-40.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-41",
@@ -1922,7 +1926,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-41.jpg"
+      "image": "images/dishes/dish-41.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-42",
@@ -3348,7 +3353,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "isArchived": true
     },
     {
       "id": "dish-78",
@@ -3393,7 +3399,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-78.jpg"
+      "image": "images/dishes/dish-78.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-79",
@@ -3448,7 +3455,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-79.jpg"
+      "image": "images/dishes/dish-79.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-80",
@@ -3493,7 +3501,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-80.jpg"
+      "image": "images/dishes/dish-80.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-81",
@@ -3543,7 +3552,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-81.jpg"
+      "image": "images/dishes/dish-81.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-82",
@@ -3567,7 +3577,8 @@
           "weight": "20.0",
           "isDecor": false
         }
-      ]
+      ],
+      "isArchived": true
     },
     {
       "id": "dish-83",
@@ -4042,7 +4053,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-96.jpg"
+      "image": "images/dishes/dish-96.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-97",
@@ -4097,7 +4109,8 @@
           "isDecor": false
         }
       ],
-      "image": "images/dishes/dish-97.jpg"
+      "image": "images/dishes/dish-97.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-98",
@@ -4152,7 +4165,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-98.jpg"
+      "image": "images/dishes/dish-98.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-99",
@@ -4207,7 +4221,8 @@
           "isDecor": true
         }
       ],
-      "image": "images/dishes/dish-99.jpg"
+      "image": "images/dishes/dish-99.jpg",
+      "isArchived": true
     },
     {
       "id": "dish-100",
@@ -4236,7 +4251,8 @@
           "weight": "20 г",
           "isDecor": false
         }
-      ]
+      ],
+      "isArchived": true
     },
     {
       "id": "dish-101",
@@ -4260,7 +4276,8 @@
           "weight": "60 г",
           "isDecor": false
         }
-      ]
+      ],
+      "isArchived": true
     },
     {
       "id": "dish-102",
@@ -4295,7 +4312,8 @@
           "isDecor": false
         }
       ],
-      "image": "images/dishes/dish-102.jpg"
+      "image": "images/dishes/dish-102.jpg",
+      "isArchived": true
     }
   ],
   "preps": [
@@ -4788,7 +4806,8 @@
         "Філадельфія з вугрем (40 г) в кунжуті (30 г огірка)",
         "Каліфорнія в ікрі з креветками"
       ],
-      "image": "images/sets/set-21.jpg"
+      "image": "images/sets/set-21.jpg",
+      "isArchived": true
     },
     {
       "id": "set-22",
@@ -4819,6 +4838,61 @@
         "Макі із авокадо"
       ],
       "image": "images/sets/set-23.jpg"
+    },
+    {
+      "id": "set-24",
+      "name": "Сет №1 1400 г [40 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1400 г",
+      "pieces": "40 шт",
+      "rolls": [
+        "Філадельфія з лососем",
+        "Філадельфія в кунжуті з креветками",
+        "Каліфорнія в ікрі класична",
+        "Сирний рол з грушею",
+        "Запечений рол із міксом снігового краба"
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_lOheY-NXoJY-tJtDG.webp"
+    },
+    {
+      "id": "set-25",
+      "name": "Супер кілограм 1100 г [32 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1100 г",
+      "pieces": "32 шт",
+      "rolls": [
+        "Рол з міксом лосося в унагі-чилі",
+        "Філадельфія з лососем в кунжуті",
+        "Аляска рол",
+        "Кранч рол із креветками темпура"
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_nISBH-iRWMz-ifqFh.webp"
+    },
+    {
+      "id": "set-26",
+      "name": "Міні-бургер сет №1 850 г [3 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "850 г",
+      "pieces": "3 шт",
+      "rolls": [
+        "Міні суші-бургер із запеченим лососем",
+        "Міні суші-бургер з креветками",
+        "Міні суші-бургер з лососем та сніговим крабом"
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_pZRwt-MeObV-TQubv.webp"
+    },
+    {
+      "id": "set-27",
+      "name": "Міні-бургер сет №2 850 г [3 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "850 г",
+      "pieces": "3 шт",
+      "rolls": [
+        "Міні суші-бургер з лососем в унагі-чилі",
+        "Міні суші-бургер з креветками",
+        "Міні суші-бургер з вугрем"
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_hGIYH-bKzGg-NPlsK.webp"
     }
   ]
 }

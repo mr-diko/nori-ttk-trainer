@@ -57,6 +57,11 @@ export const KitchenRecipeSheet: React.FC<KitchenRecipeSheetProps> = ({
             <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700/60">
               {item.category}
             </span>
+            {item.isArchived && (
+              <span className="text-xs font-bold px-2 py-0.5 rounded-md bg-amber-100 dark:bg-amber-950/80 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700/60">
+                📦 Архів
+              </span>
+            )}
             {'totalWeight' in item && item.totalWeight && (
               <span className="text-xs font-bold px-2.5 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-200">
                 {item.totalWeight}

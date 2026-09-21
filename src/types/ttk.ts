@@ -13,6 +13,7 @@ export interface Dish {
   ingredients: Ingredient[];
   techProcess?: string;
   image?: string;
+  isArchived?: boolean;
 }
 
 export interface PrepTech {
@@ -22,16 +23,18 @@ export interface PrepTech {
   techProcess: string;
   ingredients: { name: string; weight: string }[];
   outputWeight?: string;
+  isArchived?: boolean;
 }
 
 export interface SetMenu {
   id: string;
   name: string;
-  category: 'Набори 2026';
+  category: 'Набори 2026' | 'Акційні набори' | string;
   totalWeight: string;
   pieces?: string;
   rolls: string[];
   image?: string;
+  isArchived?: boolean;
 }
 
 export interface MenuData {

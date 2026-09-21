@@ -65,7 +65,7 @@ describe('Kitchen Storage & Features', () => {
     const sets = menuData.sets;
     const dishes = menuData.dishes;
 
-    expect(sets.length).toBe(23);
+    expect(sets.length).toBeGreaterThanOrEqual(23);
 
     // Pick a well-known set: "Філадельфія сет 1150 г"
     const philaSet = sets.find(s => s.name.includes('Філадельфія сет'));

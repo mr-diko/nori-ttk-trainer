@@ -72,4 +72,28 @@ describe('Roll to Dish Matcher (Set expansion)', () => {
     expect(findDishForRoll('Чіз рол з куркою', dishes)?.name).toBe('Чіз рол з куркою 340 г');
     expect(findDishForRoll('Монте маре', dishes)?.name).toBe('Чіз рол Монте-Маре 390 г');
   });
+
+  it('correctly matches rolls in new Set #1', () => {
+    expect(findDishForRoll('Філадельфія з лососем', dishes)?.name).toBe('Філадельфія з лососем 290 г');
+    expect(findDishForRoll('Філадельфія в кунжуті з креветками', dishes)?.name).toBe('Філадельфія з креветками в кунжуті 280 г');
+    expect(findDishForRoll('Каліфорнія в ікрі класична', dishes)?.name).toBe('Каліфорнія в кунжуті класична 260 г');
+    expect(findDishForRoll('Сирний рол з грушею', dishes)?.name).toBe('Філадельфія гриль з грушею 310 г');
+  });
+
+  it('correctly matches mini burgers in mini burger sets to base burger TTK', () => {
+    expect(findDishForRoll('Міні суші-бургер із запеченим лососем', dishes)?.name).toBe('Суші бургер із запеченим лососем 420 г');
+    expect(findDishForRoll('Міні суші-бургер з креветками', dishes)?.name).toBe('Суші бургер з креветками 400 г');
+    expect(findDishForRoll('Міні суші-бургер з вугрем', dishes)?.name).toBe('Суші бургер з вугрем 420 г');
+  });
+
+  it('verifies archive flags are set for archived dishes', () => {
+    const rollDog = dishes.find(d => d.name.includes('Рол дог'));
+    expect(rollDog?.isArchived).toBe(true);
+
+    const pandora = dishes.find(d => d.name.includes('Рол Пандора'));
+    expect(pandora?.isArchived).toBe(true);
+
+    const activeDish = dishes.find(d => d.name === 'Філадельфія лайт 290 г');
+    expect(activeDish?.isArchived).toBeFalsy();
+  });
 });

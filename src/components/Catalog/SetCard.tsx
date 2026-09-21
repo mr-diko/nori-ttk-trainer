@@ -19,6 +19,11 @@ export const SetCard: React.FC<SetCardProps> = ({ set }) => {
               <Package className="w-3 h-3" />
               Сет
             </span>
+            {set.isArchived && (
+              <span className="text-xs font-bold px-2 py-0.5 rounded-md bg-amber-100 dark:bg-amber-950/80 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-700/60">
+                📦 Архів
+              </span>
+            )}
             {set.totalWeight && (
               <span className="text-xs font-semibold px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-600">
                 {set.totalWeight}
