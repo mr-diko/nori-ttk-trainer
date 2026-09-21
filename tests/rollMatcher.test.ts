@@ -112,4 +112,28 @@ describe('Roll to Dish Matcher (Set expansion)', () => {
     const activeDish = dishes.find(d => d.name === 'Філадельфія лайт 290 г');
     expect(activeDish?.isArchived).toBeFalsy();
   });
+
+  it('correctly matches "Філадельфія в ікрі з креветками" and never confuses with "Філадельфія з креветками"', () => {
+    const caviarShrimp = findDishForRoll('Філадельфія в ікрі з креветками', dishes);
+    expect(caviarShrimp).toBeDefined();
+    expect(caviarShrimp?.name).toBe('Філадельфія в ікрі з креветками 280 г');
+    expect(caviarShrimp?.id).toBe('dish-113');
+
+    const topShrimp = findDishForRoll('Філадельфія з креветками', dishes);
+    expect(topShrimp).toBeDefined();
+    expect(topShrimp?.name).toBe('Філадельфія з креветками 280 г');
+    expect(topShrimp?.id).toBe('dish-4');
+
+    const caviarMango = findDishForRoll('Філадельфія в ікрі з креветками та манго', dishes);
+    expect(caviarMango?.name).toBe('Філадельфія в ікрі з креветками та манго 280 г');
+
+    const salmonMango = findDishForRoll('Філадельфія з лососем (50 г) та манго (30 г) в ікрі', dishes);
+    expect(salmonMango?.name).toBe('Філадельфія з лососем та манго в ікрі 280 г');
+
+    const eelSesame = findDishForRoll('Філадельфія з вугрем (40 г) в кунжуті (30 г огірка)', dishes);
+    expect(eelSesame?.name).toBe('Філадельфія з вугрем в кунжуті 280 г');
+
+    const coriRoll = findDishForRoll('Корі рол (Кобе рол в ікрі масаго та кранчі)', dishes);
+    expect(coriRoll?.name).toBe('Корі рол 345 г');
+  });
 });

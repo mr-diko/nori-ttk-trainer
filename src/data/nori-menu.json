@@ -4794,6 +4794,241 @@
         }
       ],
       "image": "images/dishes/dish-44.jpg"
+    },
+    {
+      "id": "dish-113",
+      "name": "Філадельфія в ікрі з креветками 280 г",
+      "category": "Філадельфія",
+      "totalWeight": "280 г",
+      "pieces": "8 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_DLwtp-UaRDh-gCmGl.webp"
+    },
+    {
+      "id": "dish-114",
+      "name": "Філадельфія в ікрі з креветками та манго 280 г",
+      "category": "Філадельфія",
+      "totalWeight": "280 г",
+      "pieces": "8 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Манго",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_cNLbn-DjtID-sGkVb.webp"
+    },
+    {
+      "id": "dish-115",
+      "name": "Філадельфія з лососем та манго в ікрі 280 г",
+      "category": "Філадельфія",
+      "totalWeight": "280 г",
+      "pieces": "8 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Манго",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_gUDrk-EVyeJ-HIODr.webp"
+    },
+    {
+      "id": "dish-116",
+      "name": "Філадельфія з вугрем в кунжуті 280 г",
+      "category": "Філадельфія",
+      "totalWeight": "280 г",
+      "pieces": "8 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Вугор смажений н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ],
+      "image": "images/dishes/dish-6.jpg"
+    },
+    {
+      "id": "dish-117",
+      "name": "Корі рол 345 г",
+      "category": "Фірмові роли",
+      "totalWeight": "345 г",
+      "pieces": "8 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Цибулеві кріспи",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ],
+      "image": "images/dishes/dish-26.jpg"
     }
   ],
   "preps": [

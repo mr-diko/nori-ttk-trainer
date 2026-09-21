@@ -33,12 +33,13 @@ function getTokens(str: string): string[] {
 const RAW_ALIASES: { match: string; targetName: string }[] = [
   { match: 'филаделфия delux лососем', targetName: 'Філадельфія DeLux 300 г' },
   { match: 'филаделфия delux вугрем', targetName: 'Філадельфія DeLux 300 г' },
-  { match: 'филаделфия икри креветк манго', targetName: 'Філадельфія з лососем та креветками 350 г' },
-  { match: 'филаделфия икри креветк', targetName: 'Філадельфія з креветками 280 г' },
-  { match: 'филаделфия вугрем кунжути', targetName: 'Філадельфія з вугрем 300 г' },
+  { match: 'филаделфия икри креветк', targetName: 'Філадельфія в ікрі з креветками 280 г' },
+  { match: 'филаделфия икри креветк манго', targetName: 'Філадельфія в ікрі з креветками та манго 280 г' },
+  { match: 'филаделфия лососем манго икри', targetName: 'Філадельфія з лососем та манго в ікрі 280 г' },
+  { match: 'филаделфия вугрем кунжути', targetName: 'Філадельфія з вугрем в кунжуті 280 г' },
   { match: 'сирний грушею', targetName: 'Філадельфія гриль з грушею 310 г' },
   { match: 'криспи копченим лососем', targetName: 'Кранч рол з копченим лососем 280 г' },
-  { match: 'кори', targetName: 'Кобе рол 345 г' },
+  { match: 'кори', targetName: 'Корі рол 345 г' },
   { match: 'монте маре', targetName: 'Чіз рол Монте-Маре 390 г' },
   { match: 'маки запеченим лососем', targetName: 'Хосомакі із запеченим лососем 150 г' },
   { match: 'маки темпура сниговим крабом', targetName: 'Хосомакі зі сніговим крабом' },
@@ -144,6 +145,20 @@ export function findDishForRoll(rollName: string, dishes: Dish[]): Dish | undefi
       if (!isRollQueryMini && isDishMini) penalty += 200;
       if (isRollQueryMini && !isDishMini) penalty += 200;
     }
+
+    // Caviar (ікра / масаго) strict matching
+    const rollHasCaviar = rollTokens.some(t => t.includes('икр') || t.includes('масаг'));
+    const dishHasCaviar = dishTokens.some(t => t.includes('икр') || t.includes('масаг')) ||
+      dish.ingredients.some(i => i.name.toLowerCase().includes('ікр') || i.name.toLowerCase().includes('масаго'));
+    if (rollHasCaviar && !dishHasCaviar) penalty += 300;
+    if (!rollHasCaviar && dishHasCaviar) penalty += 150;
+
+    // Sesame (кунжут) strict matching
+    const rollHasSesame = rollTokens.some(t => t.includes('кунжут'));
+    const dishHasSesame = dishTokens.some(t => t.includes('кунжут')) ||
+      dish.ingredients.some(i => i.name.toLowerCase().includes('кунжут'));
+    if (rollHasSesame && !dishHasSesame) penalty += 250;
+    if (!rollHasSesame && dishHasSesame) penalty += 100;
 
     for (const dk of distinctiveKeys) {
       const inRoll = rollTokens.some(rt => rt.includes(dk) || dk.includes(rt));
