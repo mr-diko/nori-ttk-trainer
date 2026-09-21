@@ -3,6 +3,7 @@ import { Dish, PrepTech, SetMenu } from '../../types/ttk';
 import { useApp } from '../../context/AppContext';
 import { X, Star, Camera, ChevronDown, ChevronUp, Sparkles, ArrowLeft, Layers, Utensils } from 'lucide-react';
 import { getImageUrl } from '../../utils/imageUrl';
+import { findDishForRoll } from '../../utils/rollMatcher';
 
 interface KitchenRecipeSheetProps {
   item: Dish | PrepTech | SetMenu | null;
@@ -30,15 +31,6 @@ export const KitchenRecipeSheet: React.FC<KitchenRecipeSheetProps> = ({
   const isPrep = item.category === 'Заготовки';
 
   const isPinned = pinnedDishes.includes(item.id);
-
-  // Helper to find dish by roll name in sets
-  const findDishByName = (rollName: string): Dish | undefined => {
-    const clean = rollName.trim().toLowerCase();
-    return menuData.dishes.find(d => {
-      const dClean = d.name.toLowerCase();
-      return dClean.includes(clean) || clean.includes(dClean.split(' ')[0]);
-    });
-  };
 
   return (
     <div 
@@ -221,7 +213,7 @@ export const KitchenRecipeSheet: React.FC<KitchenRecipeSheetProps> = ({
               </div>
               <div className="space-y-2">
                 {(item as SetMenu).rolls.map((rollName, idx) => {
-                  const matchedDish = findDishByName(rollName);
+                  const matchedDish = findDishForRoll(rollName, menuData.dishes);
                   return (
                     <button
                       key={idx}
@@ -244,7 +236,11 @@ export const KitchenRecipeSheet: React.FC<KitchenRecipeSheetProps> = ({
                         <span className="text-xs font-bold text-purple-700 dark:text-purple-300 bg-purple-100 dark:bg-purple-900/50 px-2 py-0.5 rounded-md flex items-center gap-1">
                           ТТК →
                         </span>
-                      ) : null}
+                      ) : (
+                        <span className="text-[11px] text-slate-400 dark:text-slate-500 italic">
+                          (без окремої ТТК)
+                        </span>
+                      )}
                     </button>
                   );
                 })}
