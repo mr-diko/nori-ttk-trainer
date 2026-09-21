@@ -96,6 +96,14 @@ describe('StorageService', () => {
     expect(StorageService.getIgnoreDecor()).toBe(false);
   });
 
+  it('manages recentCollapsed preference in StorageService', () => {
+    expect(StorageService.getRecentCollapsed()).toBe(false);
+    StorageService.setRecentCollapsed(true);
+    expect(StorageService.getRecentCollapsed()).toBe(true);
+    StorageService.setRecentCollapsed(false);
+    expect(StorageService.getRecentCollapsed()).toBe(false);
+  });
+
   it('manages custom decks creation and deletion', () => {
     const deck = StorageService.addCustomDeck('Моя колода', ['dish-1']);
     expect(deck.name).toBe('Моя колода');

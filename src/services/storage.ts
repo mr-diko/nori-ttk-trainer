@@ -10,6 +10,7 @@ const STORAGE_KEYS = {
   EXAM_HISTORY: 'nori_exam_history',
   PINNED_DISHES: 'nori_pinned_dishes',
   RECENT_DISHES: 'nori_recent_dishes',
+  RECENT_COLLAPSED: 'nori_recent_collapsed',
   WAKE_LOCK: 'nori_wake_lock_enabled',
   LAST_TAB: 'nori_last_tab',
 };
@@ -234,6 +235,15 @@ export const StorageService = {
     const updated = [id, ...list].slice(0, 10);
     localStorage.setItem(STORAGE_KEYS.RECENT_DISHES, JSON.stringify(updated));
     return updated;
+  },
+
+  getRecentCollapsed(): boolean {
+    const val = localStorage.getItem(STORAGE_KEYS.RECENT_COLLAPSED);
+    return val === 'true';
+  },
+
+  setRecentCollapsed(val: boolean): void {
+    localStorage.setItem(STORAGE_KEYS.RECENT_COLLAPSED, String(val));
   },
 
   getWakeLockPreference(): boolean {

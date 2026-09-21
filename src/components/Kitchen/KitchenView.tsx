@@ -3,7 +3,8 @@ import { useApp } from '../../context/AppContext';
 import { Dish, PrepTech, SetMenu } from '../../types/ttk';
 import { KitchenRecipeSheet } from './KitchenRecipeSheet';
 import { searchAndRankItems } from '../../utils/searchMatcher';
-import { Search, X, Star, Clock, Zap, Sun, Lightbulb, Sparkles, ChevronRight, Package, Utensils } from 'lucide-react';
+import { Search, X, Star, Clock, Zap, Sun, Lightbulb, Sparkles, ChevronRight, Package, Utensils, ChevronDown, ChevronUp } from 'lucide-react';
+import { StorageService } from '../../services/storage';
 
 export const KitchenView: React.FC = () => {
   const { 
@@ -23,7 +24,18 @@ export const KitchenView: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [selectedItem, setSelectedItem] = useState<Dish | PrepTech | SetMenu | null>(null);
   const [previousSet, setPreviousSet] = useState<SetMenu | null>(null);
+  const [isRecentCollapsed, setIsRecentCollapsed] = useState<boolean>(() => {
+    return StorageService.getRecentCollapsed();
+  });
   const searchInputRef = useRef<HTMLInputElement>(null);
+
+  const toggleRecentCollapsed = () => {
+    setIsRecentCollapsed(prev => {
+      const next = !prev;
+      StorageService.setRecentCollapsed(next);
+      return next;
+    });
+  };
 
   // All searchable items combined
   const allItems = useMemo(() => {
@@ -203,22 +215,40 @@ export const KitchenView: React.FC = () => {
           {/* Recent Dishes */}
           {recentList.length > 0 && (
             <div>
-              <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5 flex items-center gap-1">
-                <Clock className="w-3 h-3 text-slate-400" />
-                Нещодавно переглянуті:
-              </div>
-              <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
-                {recentList.map(item => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    onClick={() => handleSelectItem(item)}
-                    className="flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-750 border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-800 dark:text-slate-200 shadow-sm active:scale-95 transition-all"
-                  >
-                    <span className="whitespace-nowrap">{item.name}</span>
-                  </button>
-                ))}
-              </div>
+              <button
+                type="button"
+                onClick={toggleRecentCollapsed}
+                className="w-full flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5 py-1 px-1 -mx-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors group cursor-pointer"
+                title={isRecentCollapsed ? 'Розгорнути нещодавно переглянуті' : 'Згорнути нещодавно переглянуті'}
+              >
+                <div className="flex items-center gap-1.5">
+                  <Clock className="w-3 h-3 text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors" />
+                  <span>Нещодавно переглянуті ({recentList.length}):</span>
+                </div>
+                <div className="flex items-center gap-1 text-[11px] text-slate-400 font-semibold">
+                  <span>{isRecentCollapsed ? 'Розгорнути' : 'Згорнути'}</span>
+                  {isRecentCollapsed ? (
+                    <ChevronDown className="w-3.5 h-3.5" />
+                  ) : (
+                    <ChevronUp className="w-3.5 h-3.5" />
+                  )}
+                </div>
+              </button>
+
+              {!isRecentCollapsed && (
+                <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar animate-fadeIn">
+                  {recentList.map(item => (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => handleSelectItem(item)}
+                      className="flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-750 border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-800 dark:text-slate-200 shadow-sm active:scale-95 transition-all"
+                    >
+                      <span className="whitespace-nowrap">{item.name}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           )}
         </div>
