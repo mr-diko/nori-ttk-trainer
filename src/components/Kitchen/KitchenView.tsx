@@ -190,7 +190,7 @@ export const KitchenView: React.FC = () => {
                     className="flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/40 dark:hover:bg-amber-900/60 border border-amber-300/80 dark:border-amber-700/60 text-xs font-semibold text-amber-950 dark:text-amber-200 shadow-sm active:scale-95 transition-all"
                   >
                     <span>🍣</span>
-                    <span className="truncate max-w-[140px]">{item.name}</span>
+                    <span className="whitespace-nowrap">{item.name}</span>
                     <span className="text-[10px] text-amber-700 dark:text-amber-300 font-mono">
                       {'totalWeight' in item ? item.totalWeight : ''}
                     </span>
@@ -215,7 +215,7 @@ export const KitchenView: React.FC = () => {
                     onClick={() => handleSelectItem(item)}
                     className="flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-750 border border-slate-200 dark:border-slate-700 text-xs font-medium text-slate-800 dark:text-slate-200 shadow-sm active:scale-95 transition-all"
                   >
-                    <span className="truncate max-w-[130px]">{item.name}</span>
+                    <span className="whitespace-nowrap">{item.name}</span>
                   </button>
                 ))}
               </div>
@@ -292,8 +292,8 @@ export const KitchenView: React.FC = () => {
                 className="group flex items-center justify-between p-3.5 sm:p-4 rounded-2xl bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700/80 hover:border-emerald-500/60 dark:hover:border-emerald-500/60 shadow-sm hover:shadow-md transition-all cursor-pointer select-none active:scale-[0.99]"
               >
                 {/* Left: icon & title */}
-                <div className="flex items-center gap-3 min-w-0 flex-1 mr-3">
-                  <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 ${
+                <div className="flex items-start gap-3 min-w-0 flex-1 mr-2">
+                  <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5 ${
                     isSet
                       ? 'bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300'
                       : isPrep
@@ -303,32 +303,31 @@ export const KitchenView: React.FC = () => {
                     {isSet ? <Package className="w-5 h-5" /> : isPrep ? <Utensils className="w-5 h-5" /> : <span>🍣</span>}
                   </div>
 
-                  <div className="min-w-0">
-                    <h3 className="text-base font-bold text-slate-900 dark:text-white truncate group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-base font-bold text-slate-900 dark:text-white break-words leading-snug group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                       {item.name}
                     </h3>
-                    <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                      <span>{item.category}</span>
+                    <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 mt-1">
+                      <span className="font-medium">{item.category}</span>
+                      {'totalWeight' in item && item.totalWeight && (
+                        <span className="text-[11px] font-black px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/50 font-mono">
+                          {item.totalWeight}
+                        </span>
+                      )}
+                      {'outputWeight' in item && item.outputWeight && (
+                        <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800/50 font-mono">
+                          {item.outputWeight}
+                        </span>
+                      )}
                       {'pieces' in item && item.pieces && (
-                        <span>• {item.pieces}</span>
+                        <span className="font-medium text-slate-400 dark:text-slate-500">• {item.pieces}</span>
                       )}
                     </div>
                   </div>
                 </div>
 
-                {/* Right: weight, pin button, open indicator */}
-                <div className="flex items-center gap-2 flex-shrink-0">
-                  {'totalWeight' in item && item.totalWeight && (
-                    <span className="text-xs font-black px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/50 font-mono">
-                      {item.totalWeight}
-                    </span>
-                  )}
-                  {'outputWeight' in item && item.outputWeight && (
-                    <span className="text-xs font-bold px-2 py-1 rounded-lg bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 font-mono">
-                      {item.outputWeight}
-                    </span>
-                  )}
-
+                {/* Right: pin button, open indicator */}
+                <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0 self-center">
                   {/* Pin toggle button */}
                   <button
                     type="button"
@@ -336,7 +335,7 @@ export const KitchenView: React.FC = () => {
                       e.stopPropagation();
                       togglePinnedDish(item.id);
                     }}
-                    className={`p-2 rounded-xl transition-all ${
+                    className={`p-2 sm:p-2.5 rounded-xl transition-all ${
                       isPinned 
                         ? 'text-amber-500 bg-amber-50 dark:bg-amber-950/50' 
                         : 'text-slate-300 dark:text-slate-600 hover:text-amber-500'
