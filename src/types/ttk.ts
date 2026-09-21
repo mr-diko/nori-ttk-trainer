@@ -12,6 +12,7 @@ export interface Dish {
   pieces?: string;
   ingredients: Ingredient[];
   techProcess?: string;
+  image?: string;
 }
 
 export interface PrepTech {
@@ -30,6 +31,7 @@ export interface SetMenu {
   totalWeight: string;
   pieces?: string;
   rolls: string[];
+  image?: string;
 }
 
 export interface MenuData {

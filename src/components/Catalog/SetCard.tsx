@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SetMenu } from '../../types/ttk';
-import { Package, Utensils } from 'lucide-react';
+import { Package, Utensils, Camera, ChevronDown, ChevronUp } from 'lucide-react';
+import { getImageUrl } from '../../utils/imageUrl';
 
 interface SetCardProps {
   set: SetMenu;
 }
 
 export const SetCard: React.FC<SetCardProps> = ({ set }) => {
+  const [showPhoto, setShowPhoto] = useState(false);
+
   return (
     <div className="bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/70 rounded-2xl p-5 shadow-sm dark:shadow-lg hover:border-purple-500/50 transition-all duration-200 backdrop-blur-sm">
       <div className="flex items-start justify-between gap-3 mb-3">
@@ -32,6 +35,36 @@ export const SetCard: React.FC<SetCardProps> = ({ set }) => {
           </h3>
         </div>
       </div>
+
+      {/* Photo toggle button & collapsible photo (hidden by default) */}
+      {set.image && (
+        <div className="mt-1 mb-3">
+          <button
+            type="button"
+            onClick={() => setShowPhoto(!showPhoto)}
+            className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-700/70 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-colors border border-slate-200/80 dark:border-slate-600/50"
+          >
+            <Camera className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" />
+            <span>{showPhoto ? 'Сховати фото' : 'Показати фото'}</span>
+            {showPhoto ? (
+              <ChevronUp className="w-3.5 h-3.5 text-slate-400" />
+            ) : (
+              <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
+            )}
+          </button>
+
+          {showPhoto && (
+            <div className="mt-2.5 overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-900 shadow-sm transition-all duration-300">
+              <img
+                src={getImageUrl(set.image)}
+                alt={set.name}
+                loading="lazy"
+                className="w-full h-44 object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          )}
+        </div>
+      )}
 
       <div className="mt-3">
         <div className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2 flex items-center gap-1.5">

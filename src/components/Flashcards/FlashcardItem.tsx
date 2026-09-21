@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Dish } from '../../types/ttk';
 import { useApp } from '../../context/AppContext';
-import { RotateCw, Check, X, Sparkles, Scale, Eye } from 'lucide-react';
+import { RotateCw, Check, X, Sparkles, Scale, Eye, Camera, ChevronDown, ChevronUp } from 'lucide-react';
+import { getImageUrl } from '../../utils/imageUrl';
 
 interface FlashcardItemProps {
   dish: Dish;
@@ -18,6 +19,12 @@ export const FlashcardItem: React.FC<FlashcardItemProps> = ({
 }) => {
   const { ignoreDecor, isIngredientDecor } = useApp();
   const [showDecorOnCard, setShowDecorOnCard] = useState(false);
+  const [showPhoto, setShowPhoto] = useState(false);
+
+  // Reset photo visibility whenever the dish changes
+  useEffect(() => {
+    setShowPhoto(false);
+  }, [dish.id]);
 
   const baseIngredients = dish.ingredients.filter(i => !isIngredientDecor(i));
   const decorIngredients = dish.ingredients.filter(i => isIngredientDecor(i));
@@ -32,7 +39,7 @@ export const FlashcardItem: React.FC<FlashcardItemProps> = ({
         }`}
       >
         {/* FRONT SIDE */}
-        <div className="absolute inset-0 w-full h-full backface-hidden bg-gradient-to-br from-white via-slate-50 to-slate-100 dark:from-slate-800 dark:via-slate-800/95 dark:to-slate-900 border-2 border-emerald-500/40 rounded-3xl p-6 sm:p-8 flex flex-col justify-between items-center text-center shadow-lg dark:shadow-emerald-950/30">
+        <div className="absolute inset-0 w-full h-full backface-hidden bg-gradient-to-br from-white via-slate-50 to-slate-100 dark:from-slate-800 dark:via-slate-800/95 dark:to-slate-900 border-2 border-emerald-500/40 rounded-3xl p-6 sm:p-8 flex flex-col justify-between items-center text-center shadow-lg dark:shadow-emerald-950/30 overflow-y-auto">
           {/* Top category & weight */}
           <div className="w-full flex items-center justify-between">
             <span className="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-500/20 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/30">
@@ -46,9 +53,9 @@ export const FlashcardItem: React.FC<FlashcardItemProps> = ({
             )}
           </div>
 
-          {/* Center Dish Name */}
-          <div className="my-auto py-6">
-            <span className="text-4xl mb-4 block">🍣</span>
+          {/* Center Dish Name & Optional Photo */}
+          <div className="my-auto py-4 w-full flex flex-col items-center">
+            <span className="text-4xl mb-3 block">🍣</span>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-wide leading-tight">
               {dish.name}
             </h2>
@@ -56,6 +63,38 @@ export const FlashcardItem: React.FC<FlashcardItemProps> = ({
               <p className="text-sm font-medium text-emerald-600 dark:text-emerald-400 mt-2">
                 {dish.pieces}
               </p>
+            )}
+
+            {/* Collapsible photo toggle (hidden by default) */}
+            {dish.image && (
+              <div className="mt-4 w-full flex flex-col items-center">
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowPhoto(!showPhoto);
+                  }}
+                  className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full bg-slate-100/90 hover:bg-slate-200 dark:bg-slate-700/80 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-600/50 shadow-sm transition-all"
+                >
+                  <Camera className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                  <span>{showPhoto ? 'Сховати фото' : 'Показати фото'}</span>
+                  {showPhoto ? (
+                    <ChevronUp className="w-3.5 h-3.5 text-slate-400" />
+                  ) : (
+                    <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
+                  )}
+                </button>
+
+                {showPhoto && (
+                  <div className="mt-3 max-w-[260px] w-full overflow-hidden rounded-2xl border-2 border-emerald-500/40 shadow-lg transition-all duration-300">
+                    <img
+                      src={getImageUrl(dish.image)}
+                      alt={dish.name}
+                      className="w-full h-36 object-cover"
+                    />
+                  </div>
+                )}
+              </div>
             )}
           </div>
 
@@ -85,6 +124,38 @@ export const FlashcardItem: React.FC<FlashcardItemProps> = ({
                 </span>
               )}
             </div>
+
+            {/* Collapsible photo on back side (hidden by default) */}
+            {dish.image && (
+              <div className="mb-3">
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setShowPhoto(!showPhoto);
+                  }}
+                  className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-750 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 transition-colors"
+                >
+                  <Camera className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                  <span>{showPhoto ? 'Сховати фото' : 'Показати фото'}</span>
+                  {showPhoto ? (
+                    <ChevronUp className="w-3.5 h-3.5 text-slate-400" />
+                  ) : (
+                    <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
+                  )}
+                </button>
+
+                {showPhoto && (
+                  <div className="mt-2 overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm transition-all duration-300">
+                    <img
+                      src={getImageUrl(dish.image)}
+                      alt={dish.name}
+                      className="w-full h-32 object-cover"
+                    />
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Base ingredients list */}
             <div className="space-y-1.5 mb-3">

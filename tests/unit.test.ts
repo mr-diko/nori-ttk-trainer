@@ -123,3 +123,31 @@ describe('StorageService', () => {
     expect(second.status).toBe('mastered');
   });
 });
+
+describe('Image and Photo Assets', () => {
+  it('correctly resolves image paths using getImageUrl', async () => {
+    const { getImageUrl } = await import('../src/utils/imageUrl');
+    expect(getImageUrl()).toBe('');
+    expect(getImageUrl('https://example.com/photo.jpg')).toBe('https://example.com/photo.jpg');
+    expect(getImageUrl('data:image/jpeg;base64,123')).toBe('data:image/jpeg;base64,123');
+    
+    const rel = getImageUrl('images/dishes/dish-1.jpg');
+    expect(rel).toContain('images/dishes/dish-1.jpg');
+  });
+
+  it('validates nori-menu.json contains embedded photos for dishes and sets', async () => {
+    const menuData = (await import('../src/data/nori-menu.json')).default;
+    const dishesWithPhoto = menuData.dishes.filter(d => d.image);
+    const setsWithPhoto = menuData.sets.filter(s => s.image);
+
+    expect(dishesWithPhoto.length).toBeGreaterThan(90);
+    expect(setsWithPhoto.length).toBe(23);
+
+    for (const d of dishesWithPhoto) {
+      expect(d.image).toMatch(/^images\/dishes\/dish-\d+\.jpg$/);
+    }
+    for (const s of setsWithPhoto) {
+      expect(s.image).toMatch(/^images\/sets\/set-\d+\.jpg$/);
+    }
+  });
+});

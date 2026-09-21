@@ -51,7 +51,8 @@
           "weight": "60 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-1.jpg"
     },
     {
       "id": "dish-2",
@@ -95,7 +96,8 @@
           "weight": "10 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-2.jpg"
     },
     {
       "id": "dish-3",
@@ -124,7 +126,8 @@
           "weight": "60 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-3.jpg"
     },
     {
       "id": "dish-4",
@@ -158,7 +161,8 @@
           "weight": "50 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-4.jpg"
     },
     {
       "id": "dish-5",
@@ -192,7 +196,8 @@
           "weight": "60 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-5.jpg"
     },
     {
       "id": "dish-6",
@@ -231,7 +236,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-6.jpg"
     },
     {
       "id": "dish-7",
@@ -275,7 +281,8 @@
           "weight": "15 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-7.jpg"
     },
     {
       "id": "dish-8",
@@ -324,7 +331,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-8.jpg"
     },
     {
       "id": "dish-9",
@@ -373,7 +381,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-9.jpg"
     },
     {
       "id": "dish-10",
@@ -412,7 +421,8 @@
           "weight": "15 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-10.jpg"
     },
     {
       "id": "dish-11",
@@ -466,7 +476,8 @@
           "weight": "10 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-11.jpg"
     },
     {
       "id": "dish-12",
@@ -515,7 +526,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-12.jpg"
     },
     {
       "id": "dish-13",
@@ -564,7 +576,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-13.jpg"
     },
     {
       "id": "dish-14",
@@ -608,7 +621,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-14.jpg"
     },
     {
       "id": "dish-15",
@@ -652,7 +666,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-15.jpg"
     },
     {
       "id": "dish-16",
@@ -696,7 +711,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-16.jpg"
     },
     {
       "id": "dish-17",
@@ -740,7 +756,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-17.jpg"
     },
     {
       "id": "dish-18",
@@ -784,7 +801,8 @@
           "weight": "10 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-18.jpg"
     },
     {
       "id": "dish-19",
@@ -828,7 +846,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-19.jpg"
     },
     {
       "id": "dish-20",
@@ -877,7 +896,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-20.jpg"
     },
     {
       "id": "dish-21",
@@ -926,7 +946,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-21.jpg"
     },
     {
       "id": "dish-22",
@@ -970,7 +991,8 @@
           "weight": "5 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-22.jpg"
     },
     {
       "id": "dish-23",
@@ -1019,7 +1041,8 @@
           "weight": "2 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-23.jpg"
     },
     {
       "id": "dish-24",
@@ -1063,7 +1086,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-24.jpg"
     },
     {
       "id": "dish-25",
@@ -1112,7 +1136,8 @@
           "weight": "2 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-25.jpg"
     },
     {
       "id": "dish-26",
@@ -1161,7 +1186,8 @@
           "weight": "5 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-26.jpg"
     },
     {
       "id": "dish-27",
@@ -1220,7 +1246,8 @@
           "weight": "15 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-27.jpg"
     },
     {
       "id": "dish-28",
@@ -1289,7 +1316,8 @@
           "weight": "5 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-28.jpg"
     },
     {
       "id": "dish-29",
@@ -1348,7 +1376,8 @@
           "weight": "5 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-29.jpg"
     },
     {
       "id": "dish-30",
@@ -1397,7 +1426,8 @@
           "weight": "15 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-30.jpg"
     },
     {
       "id": "dish-31",
@@ -1451,7 +1481,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-31.jpg"
     },
     {
       "id": "dish-32",
@@ -1500,7 +1531,8 @@
           "weight": "50 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-32.jpg"
     },
     {
       "id": "dish-33",
@@ -1544,7 +1576,8 @@
           "weight": "2 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-33.jpg"
     },
     {
       "id": "dish-34",
@@ -1583,7 +1616,8 @@
           "weight": "2 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-34.jpg"
     },
     {
       "id": "dish-35",
@@ -1622,7 +1656,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-35.jpg"
     },
     {
       "id": "dish-36",
@@ -1661,7 +1696,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-36.jpg"
     },
     {
       "id": "dish-37",
@@ -1700,7 +1736,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-37.jpg"
     },
     {
       "id": "dish-38",
@@ -1739,7 +1776,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-38.jpg"
     },
     {
       "id": "dish-39",
@@ -1783,7 +1821,8 @@
           "weight": "5 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-39.jpg"
     },
     {
       "id": "dish-40",
@@ -1832,7 +1871,8 @@
           "weight": "5 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-40.jpg"
     },
     {
       "id": "dish-41",
@@ -1881,7 +1921,8 @@
           "weight": "",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-41.jpg"
     },
     {
       "id": "dish-42",
@@ -1905,7 +1946,8 @@
           "weight": "50 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-42.jpg"
     },
     {
       "id": "dish-43",
@@ -1929,7 +1971,8 @@
           "weight": "40 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-43.jpg"
     },
     {
       "id": "dish-44",
@@ -1953,7 +1996,8 @@
           "weight": "40 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-44.jpg"
     },
     {
       "id": "dish-45",
@@ -1977,7 +2021,8 @@
           "weight": "50 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-45.jpg"
     },
     {
       "id": "dish-46",
@@ -2006,7 +2051,8 @@
           "weight": "20 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-46.jpg"
     },
     {
       "id": "dish-47",
@@ -2035,7 +2081,8 @@
           "weight": "10 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-47.jpg"
     },
     {
       "id": "dish-48",
@@ -2089,7 +2136,8 @@
           "weight": "30 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-48.jpg"
     },
     {
       "id": "dish-49",
@@ -2128,7 +2176,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-49.jpg"
     },
     {
       "id": "dish-50",
@@ -2172,7 +2221,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-50.jpg"
     },
     {
       "id": "dish-51",
@@ -2216,7 +2266,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-51.jpg"
     },
     {
       "id": "dish-52",
@@ -2260,7 +2311,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-52.jpg"
     },
     {
       "id": "dish-53",
@@ -2309,7 +2361,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-53.jpg"
     },
     {
       "id": "dish-54",
@@ -2348,7 +2401,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-54.jpg"
     },
     {
       "id": "dish-55",
@@ -2402,7 +2456,8 @@
           "weight": "10 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-55.jpg"
     },
     {
       "id": "dish-56",
@@ -2456,7 +2511,8 @@
           "weight": "10 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-56.jpg"
     },
     {
       "id": "dish-57",
@@ -2500,7 +2556,8 @@
           "weight": "5 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-57.jpg"
     },
     {
       "id": "dish-58",
@@ -2544,7 +2601,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-58.jpg"
     },
     {
       "id": "dish-59",
@@ -2607,7 +2665,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-60.jpg"
     },
     {
       "id": "dish-61",
@@ -2651,7 +2710,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-61.jpg"
     },
     {
       "id": "dish-62",
@@ -2690,7 +2750,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-62.jpg"
     },
     {
       "id": "dish-63",
@@ -2739,7 +2800,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-63.jpg"
     },
     {
       "id": "dish-64",
@@ -2783,7 +2845,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-64.jpg"
     },
     {
       "id": "dish-65",
@@ -2832,7 +2895,8 @@
           "weight": "5 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-65.jpg"
     },
     {
       "id": "dish-66",
@@ -2900,7 +2964,8 @@
           "weight": "80 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-67.jpg"
     },
     {
       "id": "dish-68",
@@ -2934,7 +2999,8 @@
           "weight": "80 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-68.jpg"
     },
     {
       "id": "dish-69",
@@ -3002,7 +3068,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-70.jpg"
     },
     {
       "id": "dish-71",
@@ -3046,7 +3113,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-71.jpg"
     },
     {
       "id": "dish-72",
@@ -3095,7 +3163,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-72.jpg"
     },
     {
       "id": "dish-73",
@@ -3144,7 +3213,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-73.jpg"
     },
     {
       "id": "dish-74",
@@ -3193,7 +3263,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-74.jpg"
     },
     {
       "id": "dish-75",
@@ -3237,7 +3308,8 @@
           "weight": "25 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-75.jpg"
     },
     {
       "id": "dish-77",
@@ -3320,7 +3392,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-78.jpg"
     },
     {
       "id": "dish-79",
@@ -3374,7 +3447,8 @@
           "weight": "15 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-79.jpg"
     },
     {
       "id": "dish-80",
@@ -3418,7 +3492,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-80.jpg"
     },
     {
       "id": "dish-81",
@@ -3467,7 +3542,8 @@
           "weight": "15 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-81.jpg"
     },
     {
       "id": "dish-82",
@@ -3545,7 +3621,8 @@
           "weight": "15 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-83.jpg"
     },
     {
       "id": "dish-84",
@@ -3594,7 +3671,8 @@
           "weight": "15 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-84.jpg"
     },
     {
       "id": "dish-85",
@@ -3648,7 +3726,8 @@
           "weight": "15 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-85.jpg"
     },
     {
       "id": "dish-86",
@@ -3677,7 +3756,8 @@
           "weight": "5 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-86.jpg"
     },
     {
       "id": "dish-87",
@@ -3701,7 +3781,8 @@
           "weight": "50 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-87.jpg"
     },
     {
       "id": "dish-88",
@@ -3725,7 +3806,8 @@
           "weight": "50 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-88.jpg"
     },
     {
       "id": "dish-89",
@@ -3749,7 +3831,8 @@
           "weight": "1 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-89.jpg"
     },
     {
       "id": "dish-90",
@@ -3788,7 +3871,8 @@
           "weight": "1 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-90.jpg"
     },
     {
       "id": "dish-91",
@@ -3812,7 +3896,8 @@
           "weight": "1 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-91.jpg"
     },
     {
       "id": "dish-92",
@@ -3836,7 +3921,8 @@
           "weight": "1 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-92.jpg"
     },
     {
       "id": "dish-93",
@@ -3865,7 +3951,8 @@
           "weight": "3 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-93.jpg"
     },
     {
       "id": "dish-94",
@@ -3894,7 +3981,8 @@
           "weight": "3 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-94.jpg"
     },
     {
       "id": "dish-95",
@@ -3923,7 +4011,8 @@
           "weight": "3 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-95.jpg"
     },
     {
       "id": "dish-96",
@@ -3952,7 +4041,8 @@
           "weight": "3 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-96.jpg"
     },
     {
       "id": "dish-97",
@@ -4006,7 +4096,8 @@
           "weight": "30 г",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-97.jpg"
     },
     {
       "id": "dish-98",
@@ -4060,7 +4151,8 @@
           "weight": "20 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-98.jpg"
     },
     {
       "id": "dish-99",
@@ -4114,7 +4206,8 @@
           "weight": "5 г",
           "isDecor": true
         }
-      ]
+      ],
+      "image": "images/dishes/dish-99.jpg"
     },
     {
       "id": "dish-100",
@@ -4201,7 +4294,8 @@
           "weight": "",
           "isDecor": false
         }
-      ]
+      ],
+      "image": "images/dishes/dish-102.jpg"
     }
   ],
   "preps": [
@@ -4410,7 +4504,8 @@
         "Філадельфія лайт",
         "Філадельфія в кунжуті зі свіжим лососем",
         "Філадельфія гриль з грушею"
-      ]
+      ],
+      "image": "images/sets/set-1.jpg"
     },
     {
       "id": "set-2",
@@ -4423,7 +4518,8 @@
         "Філадельфія DeLux з вугрем (50г)",
         "Філадельфія в ікрі з креветками",
         "Філадельфія гриль з грушею (лосось 90г)"
-      ]
+      ],
+      "image": "images/sets/set-2.jpg"
     },
     {
       "id": "set-3",
@@ -4436,7 +4532,8 @@
         "Філадельфія з вугрем",
         "Авокадо рол з лососем",
         "Філадельфія в кунжуті з креветками"
-      ]
+      ],
+      "image": "images/sets/set-3.jpg"
     },
     {
       "id": "set-4",
@@ -4449,7 +4546,8 @@
         "Ідзумі рол",
         "Сирний з мигдалем",
         "Кранч з копченим лососем"
-      ]
+      ],
+      "image": "images/sets/set-4.jpg"
     },
     {
       "id": "set-5",
@@ -4464,7 +4562,8 @@
         "Філадельфія зі свіжим лососем в кунжуті",
         "Кранч рол з креветками",
         "Кріспі з копченим лососем"
-      ]
+      ],
+      "image": "images/sets/set-5.jpg"
     },
     {
       "id": "set-6",
@@ -4479,7 +4578,8 @@
         "Філадельфія з лососем",
         "Каліфорнія в ікрі з лососем",
         "Боніто із запеченим лососем"
-      ]
+      ],
+      "image": "images/sets/set-6.jpg"
     },
     {
       "id": "set-7",
@@ -4491,7 +4591,8 @@
         "Чіз рол із запеченим лососем",
         "Чіз рол з куркою",
         "Монте маре"
-      ]
+      ],
+      "image": "images/sets/set-7.jpg"
     },
     {
       "id": "set-8",
@@ -4506,7 +4607,8 @@
         "суші лосось 2 шт",
         "гункан лосось 2 шт",
         "гункан креветка 2 шт"
-      ]
+      ],
+      "image": "images/sets/set-8.jpg"
     },
     {
       "id": "set-9",
@@ -4519,7 +4621,8 @@
         "Філадельфія з лососем (50 г) та манго (30 г) в ікрі",
         "Філадельфія з вугрем",
         "Філадельфія з креветками в кунжуті"
-      ]
+      ],
+      "image": "images/sets/set-9.jpg"
     },
     {
       "id": "set-10",
@@ -4532,7 +4635,8 @@
         "Кобе рол",
         "Каліфорнія в кунжуті з лососем",
         "Суші лосось 3 шт"
-      ]
+      ],
+      "image": "images/sets/set-10.jpg"
     },
     {
       "id": "set-11",
@@ -4546,7 +4650,8 @@
         "Сакура рол",
         "Філадельфія з креветками",
         "Корі рол (Кобе рол в ікрі масаго та кранчі)"
-      ]
+      ],
+      "image": "images/sets/set-11.jpg"
     },
     {
       "id": "set-12",
@@ -4558,7 +4663,8 @@
         "Філадельфія з лососем",
         "Макі з лососем",
         "Суші лосось 2 шт"
-      ]
+      ],
+      "image": "images/sets/set-12.jpg"
     },
     {
       "id": "set-13",
@@ -4570,7 +4676,8 @@
         "Темпура рол з лососем",
         "Темпура рол зі сніговим крабом",
         "Запечений рол з креветками"
-      ]
+      ],
+      "image": "images/sets/set-13.jpg"
     },
     {
       "id": "set-14",
@@ -4583,7 +4690,8 @@
         "Темпура рол із запеченим лососем",
         "Темпура рол з лососем та гострою карамеллю",
         "Макі темпура зі сніговим крабом"
-      ]
+      ],
+      "image": "images/sets/set-14.jpg"
     },
     {
       "id": "set-15",
@@ -4597,7 +4705,8 @@
         "Філадельфія з креветкою",
         "Філадельфія в кунжуті з креветками",
         "Каліфорнія в ікрі класична"
-      ]
+      ],
+      "image": "images/sets/set-15.jpg"
     },
     {
       "id": "set-16",
@@ -4609,7 +4718,8 @@
         "Темпура рол з креветками та манго",
         "Темпура рол з лососем",
         "Темпура рол з куркою та чеддером"
-      ]
+      ],
+      "image": "images/sets/set-16.jpg"
     },
     {
       "id": "set-17",
@@ -4622,7 +4732,8 @@
         "Боніто із запеченим лососем",
         "Футомак із запечним лососем",
         "Футомак з креветками темпура"
-      ]
+      ],
+      "image": "images/sets/set-17.jpg"
     },
     {
       "id": "set-18",
@@ -4635,7 +4746,8 @@
         "Темпура рол із запеченим лососем",
         "Філадельфія в ікрі з креветками",
         "Філадельфія з лососем та вугрем"
-      ]
+      ],
+      "image": "images/sets/set-18.jpg"
     },
     {
       "id": "set-19",
@@ -4649,7 +4761,8 @@
         "Кранч рол з креветками",
         "Філадельфія з лососем в кунжуті",
         "Фелікс рол з креветками"
-      ]
+      ],
+      "image": "images/sets/set-19.jpg"
     },
     {
       "id": "set-20",
@@ -4661,7 +4774,8 @@
         "Філадельфія з лососем",
         "Філадельфія в ікрі з креветками та манго",
         "Чіз рол з креветками"
-      ]
+      ],
+      "image": "images/sets/set-20.jpg"
     },
     {
       "id": "set-21",
@@ -4673,7 +4787,8 @@
         "Філадельфія зі свіжим лососем",
         "Філадельфія з вугрем (40 г) в кунжуті (30 г огірка)",
         "Каліфорнія в ікрі з креветками"
-      ]
+      ],
+      "image": "images/sets/set-21.jpg"
     },
     {
       "id": "set-22",
@@ -4686,7 +4801,8 @@
         "Філадельфія в ікрі з креветками",
         "Філадельфія з лососем в кунжуті",
         "Філадельфія з лососем"
-      ]
+      ],
+      "image": "images/sets/set-22.jpg"
     },
     {
       "id": "set-23",
@@ -4701,7 +4817,8 @@
         "Макі із запеченим лососем (40 г)",
         "Макі із огірком",
         "Макі із авокадо"
-      ]
+      ],
+      "image": "images/sets/set-23.jpg"
     }
   ]
 }
