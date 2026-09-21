@@ -1,0 +1,16 @@
+{
+  "short_name": "NORI ТТК",
+  "name": "NORI TTK Trainer - Тренажер меню та рецептур",
+  "icons": [
+    {
+      "src": "/sushi-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#16a34a",
+  "display": "standalone",
+  "orientation": "portrait"
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="noriGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="salmonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#0f172a" stroke="#22c55e" stroke-width="4" />
+  <!-- Nori outer ring -->
+  <rect x="22" y="32" width="56" height="36" rx="14" fill="url(#noriGrad)" stroke="#15803d" stroke-width="2" />
+  <!-- Rice inner -->
+  <rect x="26" y="36" width="48" height="28" rx="10" fill="#f8fafc" />
+  <!-- Fish center -->
+  <circle cx="50" cy="50" r="9" fill="url(#salmonGrad)" />
+  <!-- Cucumber speck -->
+  <circle cx="43" cy="50" r="3.5" fill="#22c55e" />
+  <!-- Cheese speck -->
+  <circle cx="57" cy="50" r="3.5" fill="#fef08a" />
+</svg>

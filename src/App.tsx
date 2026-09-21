@@ -1,29 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useApp } from './context/AppContext';
+import { Header } from './components/Layout/Header';
+import { BottomNav } from './components/Layout/BottomNav';
+import { CatalogView } from './components/Catalog/CatalogView';
+import { FlashcardView } from './components/Flashcards/FlashcardView';
+import { ExamView } from './components/Exam/ExamView';
+import { DecksManager } from './components/Decks/DecksManager';
+import { SettingsView } from './components/Settings/SettingsView';
+import { Dish } from './types/ttk';
 
 export default function App() {
-  const { menuData, ignoreDecor, setIgnoreDecor, theme, toggleTheme } = useApp();
+  const { currentTab, setCurrentTab, setActiveDeckId } = useApp();
+  const [studyDish, setStudyDish] = useState<Dish | null>(null);
+
+  const handleStudyDish = (dish: Dish) => {
+    setStudyDish(dish);
+    setCurrentTab('flashcards');
+  };
+
+  const handleStudyDeck = (deckId: string) => {
+    setStudyDish(null);
+    setActiveDeckId(deckId);
+    setCurrentTab('flashcards');
+  };
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100 p-4">
-      <h1 className="text-2xl font-bold text-emerald-400">NORI TTK Trainer</h1>
-      <p className="text-slate-400 mt-2">
-        Dishes: {menuData.dishes.length}, Preps: {menuData.preps.length}, Sets: {menuData.sets.length}
-      </p>
-      <div className="mt-4 flex gap-4">
-        <button 
-          onClick={() => setIgnoreDecor(!ignoreDecor)}
-          className="px-4 py-2 bg-emerald-600 rounded-lg"
-        >
-          {ignoreDecor ? '🌿 Декор приховано' : 'Декор включено'}
-        </button>
-        <button 
-          onClick={toggleTheme}
-          className="px-4 py-2 bg-slate-700 rounded-lg"
-        >
-          Тема: {theme}
-        </button>
-      </div>
+    <div className="min-h-screen bg-slate-900 text-slate-100 flex flex-col font-sans transition-colors duration-200">
+      <Header />
+
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 pb-24 md:pb-12">
+        {currentTab === 'catalog' && (
+          <CatalogView onStudyDish={handleStudyDish} />
+        )}
+
+        {currentTab === 'flashcards' && (
+          <FlashcardView initialDish={studyDish} />
+        )}
+
+        {currentTab === 'exam' && (
+          <ExamView />
+        )}
+
+        {currentTab === 'decks' && (
+          <DecksManager onStudyDeck={handleStudyDeck} />
+        )}
+
+        {currentTab === 'settings' && (
+          <SettingsView />
+        )}
+      </main>
+
+      <BottomNav />
     </div>
   );
 }
