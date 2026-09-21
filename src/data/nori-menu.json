@@ -1,0 +1,4707 @@
+{
+  "categories": [
+    "Філадельфія",
+    "Уромаки",
+    "Фірмові роли",
+    "Каліфорнія",
+    "Футохосомакі",
+    "Суші-бургери",
+    "Теплі, запечені, чіз роли",
+    "Рол доги",
+    "Норі роли",
+    "Оніґірі",
+    "Суші та гункани",
+    "Вегетаріанське АРХІВ",
+    "Заготовки",
+    "Набори 2026"
+  ],
+  "dishCount": 101,
+  "prepCount": 24,
+  "setCount": 23,
+  "dishes": [
+    {
+      "id": "dish-1",
+      "name": "Філадельфія з лососем 290 г",
+      "category": "Філадельфія",
+      "totalWeight": "290 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений/копчений н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-2",
+      "name": "Філадельфія DeLux 300 г",
+      "category": "Філадельфія",
+      "totalWeight": "300 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-3",
+      "name": "Філадельфія дабл чіз 290 г",
+      "category": "Філадельфія",
+      "totalWeight": "290 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-4",
+      "name": "Філадельфія з креветками 280 г",
+      "category": "Філадельфія",
+      "totalWeight": "280 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки тигрові наверх н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-5",
+      "name": "Філадельфія з тунцем 290 г",
+      "category": "Філадельфія",
+      "totalWeight": "290 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тунець",
+          "weight": "60 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-6",
+      "name": "Філадельфія з вугрем 300 г",
+      "category": "Філадельфія",
+      "totalWeight": "300 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Вугор",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-7",
+      "name": "Філадельфія з лососем та вугрем 295 г",
+      "category": "Філадельфія",
+      "totalWeight": "295 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Вугор",
+          "weight": "25 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "15 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-8",
+      "name": "Філадельфія лайт 290 г",
+      "category": "Філадельфія",
+      "totalWeight": "290 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось холодного копчення",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра імітована \"Форель\"",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-9",
+      "name": "Філадельфія з лососем та креветками 350 г",
+      "category": "Філадельфія",
+      "totalWeight": "350 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра імітована \"Форель\"",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-10",
+      "name": "Філадельфія гриль з грушею 310 г",
+      "category": "Філадельфія",
+      "totalWeight": "310 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Груша",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф гриль",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "15 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-11",
+      "name": "Філадельфія гриль зі сніговим крабом та креветками 380 г",
+      "category": "Філадельфія",
+      "totalWeight": "380 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф гриль",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Мигдальні пластівці",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-12",
+      "name": "Ямато рол 330 г",
+      "category": "Філадельфія",
+      "totalWeight": "330 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Зелена цибуля",
+          "weight": "5 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось холодного копчення",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус чилі маринований",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-13",
+      "name": "Філадельфія з лососем та хіяші 350 г",
+      "category": "Філадельфія",
+      "totalWeight": "350 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат хіяші",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус кунжутний",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-14",
+      "name": "Філадельфія з лососем в кунжуті 280 г",
+      "category": "Філадельфія",
+      "totalWeight": "280 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-15",
+      "name": "Філадельфія з креветками в кунжуті 280 г",
+      "category": "Філадельфія",
+      "totalWeight": "280 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-16",
+      "name": "Кранч рол з копченим лососем 280 г",
+      "category": "Уромаки",
+      "totalWeight": "280 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось холодного копчення",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кранч н/ф",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-17",
+      "name": "Кранч рол з креветками 290 г",
+      "category": "Уромаки",
+      "totalWeight": "290 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кранч н/ф",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-18",
+      "name": "Сирний рол з мигдалем 280 г",
+      "category": "Уромаки",
+      "totalWeight": "280 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Сир чеддер",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Мигдальні пластівці",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-19",
+      "name": "Боніто із запечним лососем 265 г",
+      "category": "Уромаки",
+      "totalWeight": "265 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось запечений н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Стружка тунця (Боніто)",
+          "weight": "5 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-20",
+      "name": "Грін рол з креветками і лососем 270 г",
+      "category": "Уромаки",
+      "totalWeight": "270 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікрогрін",
+          "weight": "5 г",
+          "isDecor": true
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-21",
+      "name": "Кріспі рол з креветками 290 г",
+      "category": "Уромаки",
+      "totalWeight": "290 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Цибулеві кріспи",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус кунжутний",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-22",
+      "name": "Дабл фіш 200 г",
+      "category": "Фірмові роли",
+      "totalWeight": "200 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки тигрові варені н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тунець",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-23",
+      "name": "Ебі рол 370 г",
+      "category": "Фірмові роли",
+      "totalWeight": "370 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.5 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат хіяші",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "90 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки \"Ебі\" н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Нитки чилі",
+          "weight": "2 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-24",
+      "name": "Рол Пандора 350 г",
+      "category": "Фірмові роли",
+      "totalWeight": "350 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Айсберг",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "90 г",
+          "isDecor": false
+        },
+        {
+          "name": "Восьминожки \"Пандора\" н/ф",
+          "weight": "6 шт - 50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра імітована \"Форель\"",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-25",
+      "name": "Авокадо рол з лососем 320 г",
+      "category": "Фірмові роли",
+      "totalWeight": "320 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "35 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Повітряний рис",
+          "weight": "2 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-26",
+      "name": "Кобе рол 345 г",
+      "category": "Фірмові роли",
+      "totalWeight": "345 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Мікрогрін",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-27",
+      "name": "Рол Каноя 400 г",
+      "category": "Фірмові роли",
+      "totalWeight": "400 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тунець",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф гриль",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Манго",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Сир чеддер",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "15 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "15 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-28",
+      "name": "Рол Торіно 340 г",
+      "category": "Фірмові роли",
+      "totalWeight": "340 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветка темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Такуан",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тунець гриль",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "15 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "15 г",
+          "isDecor": true
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Зелена цибуля",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-29",
+      "name": "Рол Осака 375 г",
+      "category": "Фірмові роли",
+      "totalWeight": "375 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші чорний н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Манго",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Сир чеддер",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Пармезан",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-30",
+      "name": "Рол Сакура 340 г",
+      "category": "Фірмові роли",
+      "totalWeight": "340 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Манго",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "15 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-31",
+      "name": "Королівський дракон 360 г",
+      "category": "Фірмові роли",
+      "totalWeight": "360 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Вугор",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-32",
+      "name": "Тигровий дракон 360 г",
+      "category": "Фірмові роли",
+      "totalWeight": "360 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Вугор",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки тигрові наверх н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-33",
+      "name": "Рол з тартаром лосося 280 г",
+      "category": "Фірмові роли",
+      "totalWeight": "280 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.5 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Тартар лосося н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Нитки чилі",
+          "weight": "2 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-34",
+      "name": "Фелікс рол з креветками 290 г",
+      "category": "Фірмові роли",
+      "totalWeight": "290 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс креветки н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Повітряний рис",
+          "weight": "2 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-35",
+      "name": "Каліфорнія в ікрі з лососем 270 г",
+      "category": "Каліфорнія",
+      "totalWeight": "270 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-36",
+      "name": "Каліфорнія в ікрі з креветками 265 г",
+      "category": "Каліфорнія",
+      "totalWeight": "265 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-37",
+      "name": "Каліфорнія в кунжуті з лососем 255 г",
+      "category": "Каліфорнія",
+      "totalWeight": "255 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-38",
+      "name": "Каліфорнія в кунжуті класична 260 г",
+      "category": "Каліфорнія",
+      "totalWeight": "260 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-39",
+      "name": "Ідзумі рол 250 г",
+      "category": "Футохосомакі",
+      "totalWeight": "250 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікрогрін",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-40",
+      "name": "Футомак із запеченим лососем 300 г",
+      "category": "Футохосомакі",
+      "totalWeight": "300 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось запечений н/ф",
+          "weight": "70 г",
+          "isDecor": false
+        },
+        {
+          "name": "Такуан",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікрогрін",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-41",
+      "name": "Футомак з креветками темпура 270 г",
+      "category": "Футохосомакі",
+      "totalWeight": "270 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "70 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Такуан",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікрогрін",
+          "weight": "5 г",
+          "isDecor": true
+        },
+        {
+          "name": "БЕЗ ІКРИ МАСАГО",
+          "weight": "",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-42",
+      "name": "Хосомакі з огірком 150 г",
+      "category": "Футохосомакі",
+      "totalWeight": "150 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "120 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "50 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-43",
+      "name": "Хосомакі з вугрем 150 г",
+      "category": "Футохосомакі",
+      "totalWeight": "150 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "120 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Вугор",
+          "weight": "40 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-44",
+      "name": "Хосомакі з лососем 150 г",
+      "category": "Футохосомакі",
+      "totalWeight": "150 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "120 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-45",
+      "name": "Хосомакі з креветками 150 г",
+      "category": "Футохосомакі",
+      "totalWeight": "150 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "120 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-46",
+      "name": "Хосомакі з авокадо 150 г",
+      "category": "Футохосомакі",
+      "totalWeight": "150 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "120 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "20 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-47",
+      "name": "Хосомакі з хіяші 150 г",
+      "category": "Футохосомакі",
+      "totalWeight": "150 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "120 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Салат хіяші",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус кунжутний",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-48",
+      "name": "Такуан Футо 270 г",
+      "category": "Футохосомакі",
+      "totalWeight": "270 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікрогрін",
+          "weight": "5 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Такуан",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат лолло-біонда",
+          "weight": "15 г",
+          "isDecor": false
+        },
+        {
+          "name": "Зелена цибуля",
+          "weight": "5 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-49",
+      "name": "Суші бургер з лососем 400 г",
+      "category": "Суші-бургери",
+      "totalWeight": "400 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1.25 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "70 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-50",
+      "name": "Суші бургер з лососем та креветками 410 г",
+      "category": "Суші-бургери",
+      "totalWeight": "410 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1.25 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Салат хіяші",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус кунжутний",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-51",
+      "name": "Суші бургер з креветками темпура 400 г",
+      "category": "Суші-бургери",
+      "totalWeight": "400 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1.25 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-52",
+      "name": "Суші бургер з креветками 400 г",
+      "category": "Суші-бургери",
+      "totalWeight": "400 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1.25 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки тигрові варені н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-53",
+      "name": "Сушi бургер з крабом 385 г",
+      "category": "Суші-бургери",
+      "totalWeight": "385 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1.25 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "70 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-54",
+      "name": "Суші бургер з кімчі та креветками темпура 390 г",
+      "category": "Суші-бургери",
+      "totalWeight": "390 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1.25 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "15 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Капуста Кімчі",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-55",
+      "name": "Black Суші бургер з креветками та сніговим крабом 420 г",
+      "category": "Суші-бургери",
+      "totalWeight": "420 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші чорний н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1.25 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Такуан",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-56",
+      "name": "Суші бургер із запеченим лососем 420 г",
+      "category": "Суші-бургери",
+      "totalWeight": "420 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1.25 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Запечений лосось н/ф",
+          "weight": "70 г",
+          "isDecor": false
+        },
+        {
+          "name": "Сир чеддер",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Цибулеві кріспи",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Мигдальні пластівці",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-57",
+      "name": "Суші бургер з лососем в унагі-чилі 420 г",
+      "category": "Суші-бургери",
+      "totalWeight": "420 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1.25 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс лосось в унагі-чилі н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Кунжут",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-58",
+      "name": "Суші бургер з вугрем 420 г",
+      "category": "Суші-бургери",
+      "totalWeight": "420 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1.25 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Мікс вугря в унагі н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-59",
+      "name": "Паніровка для бургерів",
+      "category": "Суші-бургери",
+      "totalWeight": "",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Борошно",
+          "weight": "5.0",
+          "isDecor": false
+        },
+        {
+          "name": "Кляр темпура н/ф",
+          "weight": "40.0",
+          "isDecor": false
+        },
+        {
+          "name": "Пластівці панко",
+          "weight": "20.0",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-60",
+      "name": "Темпура рол з лососем 360 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "360 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-61",
+      "name": "Темпура рол із сніговим крабом 360 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "360 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-62",
+      "name": "Темпура рол з креветками та манго 350 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "350 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Манго",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-63",
+      "name": "Темпура рол з куркою та чеддером 350 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "350 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Сир чеддер",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Філе куряче копчене",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Зелена цибуля",
+          "weight": "5 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-64",
+      "name": "Темпура рол з лососем та креветками 375 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "375 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-65",
+      "name": "Темпура рол із запеченим лососем 365 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "365 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось запечений н/ф",
+          "weight": "70 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Такуан",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-66",
+      "name": "Хосомакі зі сніговим крабом",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші",
+          "weight": "120 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-67",
+      "name": "Темпура рол з лососем в унагі-чилі 350 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "350 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс лосось в унагі-чилі н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-68",
+      "name": "Темпура рол з міксом вугря 350 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "350 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс вугря в унагі н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-69",
+      "name": "Паніровка для ролів",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Борошно",
+          "weight": "4.0",
+          "isDecor": false
+        },
+        {
+          "name": "Кляр темпура н/ф",
+          "weight": "45.0",
+          "isDecor": false
+        },
+        {
+          "name": "Пластівці панко",
+          "weight": "20.0",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-70",
+      "name": "Запечений рол з лососем 330 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "330 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс запечений лосось н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-71",
+      "name": "Запечений рол з креветками 330 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "330 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс запечений креветка н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-72",
+      "name": "Чіз рол з куркою 340 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "340 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Філе курки копчене",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Айсберг",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс пармезану н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-73",
+      "name": "Чіз рол із запеченим лососем 340 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "340 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось запечений н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Айсберг",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс пармезану н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-74",
+      "name": "Чіз рол з креветками 340 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "340 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Айсберг",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс пармезану н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-75",
+      "name": "Чіз рол Монте-Маре 390 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "390 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс пармезану н/ф",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки \"Ебі\" н/ф",
+          "weight": "25 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-77",
+      "name": "Міні бургер з креветками темпура",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-78",
+      "name": "Рол дог з креветками 375 г",
+      "category": "Рол доги",
+      "totalWeight": "375 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс креветки",
+          "weight": "80 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "15 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-79",
+      "name": "Рол дог із запеченим лососем 395 г",
+      "category": "Рол доги",
+      "totalWeight": "395 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок ( всередину )",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось запечений",
+          "weight": "70 г",
+          "isDecor": false
+        },
+        {
+          "name": "Сир чеддер грильований",
+          "weight": "25 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кріспи цибулеві",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус спайсі",
+          "weight": "15 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "15 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-80",
+      "name": "Рол дог з лососем унагі-чилі 360 г",
+      "category": "Рол доги",
+      "totalWeight": "360 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс лосося унагі-чилі",
+          "weight": "70 г",
+          "isDecor": false
+        },
+        {
+          "name": "Зелена цибуля",
+          "weight": "5 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус теріякі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-81",
+      "name": "Рол дог зі сніговим крабом і креветками 410 г",
+      "category": "Рол доги",
+      "totalWeight": "410 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "70 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі",
+          "weight": "15 г",
+          "isDecor": true
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "15 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-82",
+      "name": "Паніровка для ролів",
+      "category": "Рол доги",
+      "totalWeight": "",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Борошно",
+          "weight": "4.0",
+          "isDecor": false
+        },
+        {
+          "name": "Кляр темпура н/ф",
+          "weight": "45.0",
+          "isDecor": false
+        },
+        {
+          "name": "Пластівці панко",
+          "weight": "20.0",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-83",
+      "name": "Норі рол з копченою куркою 300 г",
+      "category": "Норі роли",
+      "totalWeight": "300 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Філе куряче копчене",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Зелена цибуля",
+          "weight": "5 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі",
+          "weight": "15 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус теріякі",
+          "weight": "15 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-84",
+      "name": "Норі рол з креветками 300 г",
+      "category": "Норі роли",
+      "totalWeight": "300 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "60 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі",
+          "weight": "15 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус теріякі",
+          "weight": "15 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-85",
+      "name": "Норі рол з копченим лососем 300 г",
+      "category": "Норі роли",
+      "totalWeight": "300 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось холодного копчення",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Зелена цибуля",
+          "weight": "5 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі",
+          "weight": "15 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус теріякі",
+          "weight": "15 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-86",
+      "name": "Оніґірі зі сніговим крабом 150 г",
+      "category": "Оніґірі",
+      "totalWeight": "150 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.5 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-87",
+      "name": "Оніґірі зі креветками 150 г",
+      "category": "Оніґірі",
+      "totalWeight": "150 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.5 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс креветки н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-88",
+      "name": "Оніґірі з лососем 150 г",
+      "category": "Оніґірі",
+      "totalWeight": "150 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.5 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс лосося н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-89",
+      "name": "Суші лосось 2 шт по 40 г",
+      "category": "Суші та гункани",
+      "totalWeight": "40 г",
+      "pieces": "2 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "25 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "15 г",
+          "isDecor": false
+        },
+        {
+          "name": "Васабі н/ф",
+          "weight": "1 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-90",
+      "name": "Суші вугор 2 шт по 45 г",
+      "category": "Суші та гункани",
+      "totalWeight": "45 г",
+      "pieces": "2 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "25 г",
+          "isDecor": false
+        },
+        {
+          "name": "Вугор",
+          "weight": "15 г",
+          "isDecor": false
+        },
+        {
+          "name": "Васабі н/ф",
+          "weight": "1 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.05 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "5 г",
+          "isDecor": true
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "1 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-91",
+      "name": "Суші креветка 2 шт по 35 г",
+      "category": "Суші та гункани",
+      "totalWeight": "35 г",
+      "pieces": "2 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "25 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки тигрові наверх",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Васабі н/ф",
+          "weight": "1 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-92",
+      "name": "Суші тунець 2 шт по 40 г",
+      "category": "Суші та гункани",
+      "totalWeight": "40 г",
+      "pieces": "2 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "25 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тунець",
+          "weight": "15 г",
+          "isDecor": false
+        },
+        {
+          "name": "Васабі н/ф",
+          "weight": "1 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-93",
+      "name": "Гункан вугор 2 шт по 60 г",
+      "category": "Суші та гункани",
+      "totalWeight": "60 г",
+      "pieces": "2 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс вугря н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "3 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-94",
+      "name": "Гункан креветка 2 шт по 60 г",
+      "category": "Суші та гункани",
+      "totalWeight": "60 г",
+      "pieces": "2 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс креветки н/ф",
+          "weight": "45 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "3 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-95",
+      "name": "Гункан лосось 2 шт по 60 г",
+      "category": "Суші та гункани",
+      "totalWeight": "60 г",
+      "pieces": "2 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс лосося н/ф",
+          "weight": "45 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "3 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-96",
+      "name": "Гункан тунець 2 шт по 60 г",
+      "category": "Суші та гункани",
+      "totalWeight": "60 г",
+      "pieces": "2 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс тунця н/ф",
+          "weight": "45 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "3 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-97",
+      "name": "Такуан Футо 270 г",
+      "category": "Вегетаріанське АРХІВ",
+      "totalWeight": "270 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "160 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікрогрін",
+          "weight": "5 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Такуан",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат лолло-біонда",
+          "weight": "15 г",
+          "isDecor": false
+        },
+        {
+          "name": "Порей",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-98",
+      "name": "Кріспі рол вегетаріанський 250 г",
+      "category": "Вегетаріанське АРХІВ",
+      "totalWeight": "250 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Тамаго н/ф",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Салат Лолло-біонда",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кріспи цибулеві",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус теріякі",
+          "weight": "20 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-99",
+      "name": "Авокадо рол з канпіо 265 г",
+      "category": "Вегетаріанське АРХІВ",
+      "totalWeight": "265 г",
+      "pieces": "",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Манго",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Гарбуз маринований (канпіо)",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус теріякі",
+          "weight": "20 г",
+          "isDecor": true
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ]
+    },
+    {
+      "id": "dish-100",
+      "name": "Хосомакі мікс - 4 шт такуан, 4 шт канпіо",
+      "category": "Вегетаріанське АРХІВ",
+      "totalWeight": "",
+      "pieces": "4 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "120 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Гарбуз маринований (канпіо)",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Такуан",
+          "weight": "20 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-101",
+      "name": "Гункан з хіяші 2шт",
+      "category": "Вегетаріанське АРХІВ",
+      "totalWeight": "",
+      "pieces": "2шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.5 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Салат хіяші",
+          "weight": "60 г",
+          "isDecor": false
+        }
+      ]
+    },
+    {
+      "id": "dish-102",
+      "name": "Сет Вегетаріанський 1100 г [28 шт]",
+      "category": "Вегетаріанське АРХІВ",
+      "totalWeight": "1100 г",
+      "pieces": "28 шт",
+      "ingredients": [
+        {
+          "name": "Такуан Футо",
+          "weight": "",
+          "isDecor": false
+        },
+        {
+          "name": "Кріспі рол вегетаріанський",
+          "weight": "",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо рол з канпіо",
+          "weight": "",
+          "isDecor": false
+        },
+        {
+          "name": "Хосомакі з такуаном і канпіо",
+          "weight": "",
+          "isDecor": false
+        },
+        {
+          "name": "Гункан з салатом хіяші 2шт",
+          "weight": "",
+          "isDecor": false
+        }
+      ]
+    }
+  ],
+  "preps": [
+    {
+      "id": "prep-1",
+      "name": "Заправка рисова",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-2",
+      "name": "Рис для суші",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-3",
+      "name": "Рис для суші чорний",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-4",
+      "name": "Засолка",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-5",
+      "name": "Лосось слабосолений",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-6",
+      "name": "Лосось запечений",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-7",
+      "name": "Соус спайсі",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-8",
+      "name": "Сироп для соєвого соусу",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-9",
+      "name": "Соєвий соус",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-10",
+      "name": "Васабі",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-11",
+      "name": "Кранч",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-12",
+      "name": "Мікс запечений лосось/креветка",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-13",
+      "name": "Мікс снігового крабу",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-14",
+      "name": "Мікс пармезану",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-15",
+      "name": "Мікс вугря в унагі",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-16",
+      "name": "Мікс креветки/лосося/\nтунця/вугря(гункан)",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-17",
+      "name": "Тартар лосося",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-18",
+      "name": "Мікс лосось в унагі-чилі",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-19",
+      "name": "Креветки варені",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-20",
+      "name": "Креветки темпура",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-21",
+      "name": "Кляр темпура",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-22",
+      "name": "Креветки \"Ебі\"",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-23",
+      "name": "Восьминіжки \"Пандора\"",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    },
+    {
+      "id": "prep-24",
+      "name": "Тамаго",
+      "category": "Заготовки",
+      "techProcess": "",
+      "ingredients": [],
+      "outputWeight": ""
+    }
+  ],
+  "sets": [
+    {
+      "id": "set-1",
+      "name": "Філадельфія сет 1150 г [32 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1150 г",
+      "pieces": "32 шт",
+      "rolls": [
+        "Філадельфія зі свіжим лососем",
+        "Філадельфія лайт",
+        "Філадельфія в кунжуті зі свіжим лососем",
+        "Філадельфія гриль з грушею"
+      ]
+    },
+    {
+      "id": "set-2",
+      "name": "Філадельфія сет Premium 1270 г [32 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1270 г",
+      "pieces": "32 шт",
+      "rolls": [
+        "Філадельфія DeLux з лососем (90г)",
+        "Філадельфія DeLux з вугрем (50г)",
+        "Філадельфія в ікрі з креветками",
+        "Філадельфія гриль з грушею (лосось 90г)"
+      ]
+    },
+    {
+      "id": "set-3",
+      "name": "Сет від Шефа 1180 г [32 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1180 г",
+      "pieces": "32 шт",
+      "rolls": [
+        "Філадельфія зі свіжим лососем",
+        "Філадельфія з вугрем",
+        "Авокадо рол з лососем",
+        "Філадельфія в кунжуті з креветками"
+      ]
+    },
+    {
+      "id": "set-4",
+      "name": "Сет Фірмовий 1060 г [34 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1060 г",
+      "pieces": "34 шт",
+      "rolls": [
+        "Філадельфія в кунжуті креветками",
+        "Ідзумі рол",
+        "Сирний з мигдалем",
+        "Кранч з копченим лососем"
+      ]
+    },
+    {
+      "id": "set-5",
+      "name": "Сет для компанії 1520 г [48 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1520 г",
+      "pieces": "48 шт",
+      "rolls": [
+        "Макі із запеченим лососем (40 г + 20 г огірка)",
+        "Сирний рол з мигдалем",
+        "Філадельфія зі свіжим лососем",
+        "Філадельфія зі свіжим лососем в кунжуті",
+        "Кранч рол з креветками",
+        "Кріспі з копченим лососем"
+      ]
+    },
+    {
+      "id": "set-6",
+      "name": "Мега сет 1710 г [48 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1710 г",
+      "pieces": "48 шт",
+      "rolls": [
+        "Сирний з грушею (50 г)",
+        "Авокадо рол з креветками (50 г)",
+        "Філадельфія з вугрем",
+        "Філадельфія з лососем",
+        "Каліфорнія в ікрі з лососем",
+        "Боніто із запеченим лососем"
+      ]
+    },
+    {
+      "id": "set-7",
+      "name": "Сет чіз ролів 1160 г [24 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1160 г",
+      "pieces": "24 шт",
+      "rolls": [
+        "Чіз рол із запеченим лососем",
+        "Чіз рол з куркою",
+        "Монте маре"
+      ]
+    },
+    {
+      "id": "set-8",
+      "name": "Топ Комбо 1270 г [30 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1270 г",
+      "pieces": "30 шт",
+      "rolls": [
+        "Філадельфія з лососем",
+        "Кранч з креветками",
+        "Авокадо рол з лососем",
+        "суші лосось 2 шт",
+        "гункан лосось 2 шт",
+        "гункан креветка 2 шт"
+      ]
+    },
+    {
+      "id": "set-9",
+      "name": "Сет Смак свята 1135 г [32 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1135 г",
+      "pieces": "32 шт",
+      "rolls": [
+        "Філадельфія з лососем",
+        "Філадельфія з лососем (50 г) та манго (30 г) в ікрі",
+        "Філадельфія з вугрем",
+        "Філадельфія з креветками в кунжуті"
+      ]
+    },
+    {
+      "id": "set-10",
+      "name": "Лососева насолода 1000 г [27 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1000 г",
+      "pieces": "27 шт",
+      "rolls": [
+        "Рол з тартаром лосося",
+        "Кобе рол",
+        "Каліфорнія в кунжуті з лососем",
+        "Суші лосось 3 шт"
+      ]
+    },
+    {
+      "id": "set-11",
+      "name": "Сет Панський 1510 г [40 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1510 г",
+      "pieces": "40 шт",
+      "rolls": [
+        "Філадельфія гриль з креветками та сніговим крабом",
+        "Філадельфія з лососем в кунжуті",
+        "Сакура рол",
+        "Філадельфія з креветками",
+        "Корі рол (Кобе рол в ікрі масаго та кранчі)"
+      ]
+    },
+    {
+      "id": "set-12",
+      "name": "Сет Соло 530 г [18 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "530 г",
+      "pieces": "18 шт",
+      "rolls": [
+        "Філадельфія з лососем",
+        "Макі з лососем",
+        "Суші лосось 2 шт"
+      ]
+    },
+    {
+      "id": "set-13",
+      "name": "Сет Вулкан 1010 г [28 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1010 г",
+      "pieces": "28 шт",
+      "rolls": [
+        "Темпура рол з лососем",
+        "Темпура рол зі сніговим крабом",
+        "Запечений рол з креветками"
+      ]
+    },
+    {
+      "id": "set-14",
+      "name": "Сет Тепле море 1120 г [32 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1120 г",
+      "pieces": "32 шт",
+      "rolls": [
+        "Темпура рол з креветками та манго",
+        "Темпура рол із запеченим лососем",
+        "Темпура рол з лососем та гострою карамеллю",
+        "Макі темпура зі сніговим крабом"
+      ]
+    },
+    {
+      "id": "set-15",
+      "name": "Роял сет 1460 г [42 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1460 г",
+      "pieces": "42 шт",
+      "rolls": [
+        "Темпура рол з лососем",
+        "Авокадо рол з лососем",
+        "Філадельфія з креветкою",
+        "Філадельфія в кунжуті з креветками",
+        "Каліфорнія в ікрі класична"
+      ]
+    },
+    {
+      "id": "set-16",
+      "name": "Сет теплих ролів 1020 г [30 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1020 г",
+      "pieces": "30 шт",
+      "rolls": [
+        "Темпура рол з креветками та манго",
+        "Темпура рол з лососем",
+        "Темпура рол з куркою та чеддером"
+      ]
+    },
+    {
+      "id": "set-17",
+      "name": "Набуток сет 1050 г [32 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1050 г",
+      "pieces": "32 шт",
+      "rolls": [
+        "Філадельфія гриль із сніговим крабом та креветками",
+        "Боніто із запеченим лососем",
+        "Футомак із запечним лососем",
+        "Футомак з креветками темпура"
+      ]
+    },
+    {
+      "id": "set-18",
+      "name": "Сет Кіото 1290 г [32 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1290 г",
+      "pieces": "32 шт",
+      "rolls": [
+        "Темпура рол з креветками та манго",
+        "Темпура рол із запеченим лососем",
+        "Філадельфія в ікрі з креветками",
+        "Філадельфія з лососем та вугрем"
+      ]
+    },
+    {
+      "id": "set-19",
+      "name": "Сет Кампай 1500 г [40 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1500 г",
+      "pieces": "40 шт",
+      "rolls": [
+        "Філадельфія з лососем та хіяші",
+        "Філадельфія з вугрем",
+        "Кранч рол з креветками",
+        "Філадельфія з лососем в кунжуті",
+        "Фелікс рол з креветками"
+      ]
+    },
+    {
+      "id": "set-20",
+      "name": "Сет Тріо 900 г [24 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "900 г",
+      "pieces": "24 шт",
+      "rolls": [
+        "Філадельфія з лососем",
+        "Філадельфія в ікрі з креветками та манго",
+        "Чіз рол з креветками"
+      ]
+    },
+    {
+      "id": "set-21",
+      "name": "Сет для двох 880 г [24 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "880 г",
+      "pieces": "24 шт",
+      "rolls": [
+        "Філадельфія зі свіжим лососем",
+        "Філадельфія з вугрем (40 г) в кунжуті (30 г огірка)",
+        "Каліфорнія в ікрі з креветками"
+      ]
+    },
+    {
+      "id": "set-22",
+      "name": "Сет Сакура 1130 г [32 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "1130 г",
+      "pieces": "32 шт",
+      "rolls": [
+        "Сакура рол",
+        "Філадельфія в ікрі з креветками",
+        "Філадельфія з лососем в кунжуті",
+        "Філадельфія з лососем"
+      ]
+    },
+    {
+      "id": "set-23",
+      "name": "Макі сет 950 г [48 шт]",
+      "category": "Набори 2026",
+      "totalWeight": "950 г",
+      "pieces": "48 шт",
+      "rolls": [
+        "Макі з лососем",
+        "Макі з тунцем(40 г)",
+        "Макі з креветкою",
+        "Макі із запеченим лососем (40 г)",
+        "Макі із огірком",
+        "Макі із авокадо"
+      ]
+    }
+  ]
+}
