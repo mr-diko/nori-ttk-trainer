@@ -4314,6 +4314,486 @@
       ],
       "image": "images/dishes/dish-102.jpg",
       "isArchived": true
+    },
+    {
+      "id": "dish-103",
+      "name": "Міні суші-бургер із запеченим лососем 285 г",
+      "category": "MINI суші-бургери",
+      "totalWeight": "285 г",
+      "pieces": "1 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось запечений",
+          "weight": "45 г",
+          "isDecor": false
+        },
+        {
+          "name": "Сир чеддер",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кляр темпура н/ф",
+          "weight": "35 г",
+          "isDecor": false
+        },
+        {
+          "name": "Пластівці панко",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Мигдальні пластівці",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_TbDeu-TDfkN-Glmpu.webp"
+    },
+    {
+      "id": "dish-104",
+      "name": "Міні суші-бургер із лососем та сніговим крабом 270 г",
+      "category": "MINI суші-бургери",
+      "totalWeight": "270 г",
+      "pieces": "1 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "35 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "35 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кляр темпура н/ф",
+          "weight": "35 г",
+          "isDecor": false
+        },
+        {
+          "name": "Пластівці панко",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "15 г",
+          "isDecor": true
+        }
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_FHPOE-gInHj-SYnkM.webp"
+    },
+    {
+      "id": "dish-105",
+      "name": "Міні суші-бургер з креветками темпура 290 г",
+      "category": "MINI суші-бургери",
+      "totalWeight": "290 г",
+      "pieces": "1 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Креветки темпура н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кляр темпура н/ф",
+          "weight": "35 г",
+          "isDecor": false
+        },
+        {
+          "name": "Пластівці панко",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "15 г",
+          "isDecor": true
+        }
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_bRUVX-utuKQ-fACoK.webp"
+    },
+    {
+      "id": "dish-106",
+      "name": "Міні суші-бургер з лососем в унагі-чилі 285 г",
+      "category": "MINI суші-бургери",
+      "totalWeight": "285 г",
+      "pieces": "1 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "45 г",
+          "isDecor": false
+        },
+        {
+          "name": "Сир чеддер",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кляр темпура н/ф",
+          "weight": "35 г",
+          "isDecor": false
+        },
+        {
+          "name": "Пластівці панко",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Соус світ чилі",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_XKhrA-UVLhi-shHGH.webp"
+    },
+    {
+      "id": "dish-107",
+      "name": "Міні суші-бургер із вугрем 295 г",
+      "category": "MINI суші-бургери",
+      "totalWeight": "295 г",
+      "pieces": "1 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "100 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "1 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Вугор смажений н/ф",
+          "weight": "45 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кляр темпура н/ф",
+          "weight": "35 г",
+          "isDecor": false
+        },
+        {
+          "name": "Пластівці панко",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "10 г",
+          "isDecor": true
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "5 г",
+          "isDecor": true
+        }
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_FRizI-IGnkO-BdHrJ.webp"
+    },
+    {
+      "id": "dish-108",
+      "name": "Каліфорнія в ікрі класична 260 г",
+      "category": "Каліфорнія",
+      "totalWeight": "260 г",
+      "pieces": "8 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Ікра масаго",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ],
+      "image": "images/dishes/dish-38.jpg"
+    },
+    {
+      "id": "dish-109",
+      "name": "Аляска рол 270 г",
+      "category": "Уромаки",
+      "totalWeight": "270 г",
+      "pieces": "8 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось слабосолений н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Огірок",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "20 г",
+          "isDecor": false
+        },
+        {
+          "name": "Кунжут білий",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ],
+      "image": "https://cdn-media.choiceqr.com/prod-eat-nori-ua/menu/img_HCGhm-lbxzC-iKjHG.jpeg"
+    },
+    {
+      "id": "dish-110",
+      "name": "Запечений рол із міксом снігового краба 340 г",
+      "category": "Теплі, запечені, чіз роли",
+      "totalWeight": "340 г",
+      "pieces": "8 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "150 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.75 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Крем-сир",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Омлет тамаго н/ф",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Авокадо",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Мікс снігового крабу/сурімі н/ф",
+          "weight": "50 г",
+          "isDecor": false
+        },
+        {
+          "name": "Сирний мікс для запікання",
+          "weight": "30 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус унагі",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ],
+      "image": "images/dishes/dish-70.jpg"
+    },
+    {
+      "id": "dish-111",
+      "name": "Хосомакі з тунцем 150 г",
+      "category": "Футохосомакі",
+      "totalWeight": "150 г",
+      "pieces": "8 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "90 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.5 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Тунець",
+          "weight": "40 г",
+          "isDecor": false
+        }
+      ],
+      "image": "images/dishes/dish-44.jpg"
+    },
+    {
+      "id": "dish-112",
+      "name": "Хосомакі із запеченим лососем 150 г",
+      "category": "Футохосомакі",
+      "totalWeight": "150 г",
+      "pieces": "8 шт",
+      "ingredients": [
+        {
+          "name": "Рис для суші н/ф",
+          "weight": "90 г",
+          "isDecor": false
+        },
+        {
+          "name": "Норі",
+          "weight": "0.5 шт",
+          "isDecor": false
+        },
+        {
+          "name": "Лосось запечений н/ф",
+          "weight": "40 г",
+          "isDecor": false
+        },
+        {
+          "name": "Соус спайсі н/ф",
+          "weight": "10 г",
+          "isDecor": true
+        }
+      ],
+      "image": "images/dishes/dish-44.jpg"
     }
   ],
   "preps": [

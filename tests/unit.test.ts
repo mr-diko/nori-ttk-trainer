@@ -144,7 +144,7 @@ describe('Image and Photo Assets', () => {
     expect(setsWithPhoto.length).toBeGreaterThanOrEqual(23);
 
     for (const d of dishesWithPhoto) {
-      expect(d.image).toMatch(/^images\/dishes\/dish-\d+\.jpg$/);
+      expect(d.image).toMatch(/^(?:images\/dishes\/dish-\d+\.jpg|https?:\/\/.*)$/);
     }
     for (const s of setsWithPhoto) {
       expect(s.image).toBeTruthy();

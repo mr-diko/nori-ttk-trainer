@@ -7,7 +7,7 @@ export function normalizeRollName(str: string): string {
   if (!str) return '';
   return str
     .toLowerCase()
-    .replace(/\(.*?\)/g, ' ') // remove parentheses e.g. (90г), (50 г)
+    .replace(/\(.*?\)/g, ' ') // remove parentheses e.g. (90г), (50 г), (40 г)
     .replace(/\s*\d+\s*(?:г|шт|мл).*$/g, ' ') // remove trailing weights e.g. 290 г, 2 шт по 40 г
     .replace(/(?<![\p{L}\p{N}])свіж\p{L}*/gu, ' ') // optional adjective свіжий/свіжим
     .replace(/(?<![\p{L}\p{N}])(?:зі|із|з|в|у|та|і|по|на)(?![\p{L}\p{N}])/gu, ' ') // prepositions
@@ -30,7 +30,7 @@ function getTokens(str: string): string[] {
 }
 
 // Special alias overrides for irregular naming differences in sets
-const IRREGULAR_ALIASES: { match: string; targetName: string }[] = [
+const RAW_ALIASES: { match: string; targetName: string }[] = [
   { match: 'филаделфия delux лососем', targetName: 'Філадельфія DeLux 300 г' },
   { match: 'филаделфия delux вугрем', targetName: 'Філадельфія DeLux 300 г' },
   { match: 'филаделфия икри креветк манго', targetName: 'Філадельфія з лососем та креветками 350 г' },
@@ -40,20 +40,29 @@ const IRREGULAR_ALIASES: { match: string; targetName: string }[] = [
   { match: 'криспи копченим лососем', targetName: 'Кранч рол з копченим лососем 280 г' },
   { match: 'кори', targetName: 'Кобе рол 345 г' },
   { match: 'монте маре', targetName: 'Чіз рол Монте-Маре 390 г' },
-  { match: 'маки запеченим лососем', targetName: 'Хосомакі з лососем 150 г' },
+  { match: 'маки запеченим лососем', targetName: 'Хосомакі із запеченим лососем 150 г' },
   { match: 'маки темпура сниговим крабом', targetName: 'Хосомакі зі сніговим крабом' },
-  { match: 'калифорния икри класична', targetName: 'Каліфорнія в кунжуті класична 260 г' },
+  { match: 'маки тунцем', targetName: 'Хосомакі з тунцем 150 г' },
+  { match: 'калифорния икри класична', targetName: 'Каліфорнія в ікрі класична 260 г' },
   { match: 'темпура лососем гострою карамеллю', targetName: 'Темпура рол з лососем в унагі-чилі 350 г' },
   { match: 'авокадо креветк', targetName: 'Кранч рол з креветками 290 г' },
-  { match: 'запечен миксом снигового краба', targetName: 'Темпура рол із сніговим крабом 360 г' },
+  { match: 'запечен миксом снигового краба', targetName: 'Запечений рол із міксом снігового краба 340 г' },
+  { match: 'миксом лосося унаги чили', targetName: 'Темпура рол з лососем в унагі-чилі 350 г' },
   { match: 'миксом лосося унагичили', targetName: 'Темпура рол з лососем в унагі-чилі 350 г' },
   { match: 'кранч креветк темпура', targetName: 'Кранч рол з креветками 290 г' },
-  { match: 'мини суши бургер запечен лососем', targetName: 'Суші бургер із запеченим лососем 420 г' },
-  { match: 'мини суши бургер креветк', targetName: 'Суші бургер з креветками 400 г' },
-  { match: 'мини суши бургер лососем сниговим крабом', targetName: 'Black Суші бургер з креветками та сніговим крабом 420 г' },
-  { match: 'мини суши бургер лососем унагичили', targetName: 'Суші бургер з лососем в унагі-чилі 420 г' },
-  { match: 'мини суши бургер вугрем', targetName: 'Суші бургер з вугрем 420 г' },
+  { match: 'аляска', targetName: 'Аляска рол 270 г' },
+  { match: 'мини суши бургер запечен лососем', targetName: 'Міні суші-бургер із запеченим лососем 285 г' },
+  { match: 'мини суши бургер креветк', targetName: 'Міні суші-бургер з креветками темпура 290 г' },
+  { match: 'мини суши бургер лососем сниговим крабом', targetName: 'Міні суші-бургер із лососем та сніговим крабом 270 г' },
+  { match: 'мини суши бургер лососем унаги чили', targetName: 'Міні суші-бургер з лососем в унагі-чилі 285 г' },
+  { match: 'мини суши бургер лососем унагичили', targetName: 'Міні суші-бургер з лососем в унагі-чилі 285 г' },
+  { match: 'мини суши бургер вугрем', targetName: 'Міні суші-бургер із вугрем 295 г' },
 ];
+
+const IRREGULAR_ALIASES = RAW_ALIASES.map(a => ({
+  match: normalizeRollName(a.match),
+  targetName: a.targetName,
+}));
 
 /**
  * Accurately finds the matching standalone Dish for a roll listed in a Set.
@@ -63,6 +72,9 @@ export function findDishForRoll(rollName: string, dishes: Dish[]): Dish | undefi
   const normRoll = normalizeRollName(rollName);
   if (!normRoll) return undefined;
 
+  const isRollQueryBurger = normRoll.includes('бургер');
+  const isRollQueryMini = normRoll.includes('мини') || normRoll.includes('міні');
+
   // 1. Check irregular aliases with exact equality
   for (const alias of IRREGULAR_ALIASES) {
     if (normRoll === alias.match) {
@@ -71,8 +83,17 @@ export function findDishForRoll(rollName: string, dishes: Dish[]): Dish | undefi
     }
   }
 
+  // Helper to check if a dish is a burger
+  const isBurgerDish = (d: Dish) =>
+    d.category.toLowerCase().includes('бургер') ||
+    normalizeRollName(d.name).includes('бургер');
+
   // 2. Direct exact normalized match
   for (const dish of dishes) {
+    const dishBurger = isBurgerDish(dish);
+    if (!isRollQueryBurger && dishBurger) continue;
+    if (isRollQueryBurger && !dishBurger) continue;
+
     if (normRoll === normalizeRollName(dish.name)) {
       return dish;
     }
@@ -82,6 +103,10 @@ export function findDishForRoll(rollName: string, dishes: Dish[]): Dish | undefi
   const rollTokens = getTokens(rollName).sort();
   const rollTokenStr = rollTokens.join(' ');
   for (const dish of dishes) {
+    const dishBurger = isBurgerDish(dish);
+    if (!isRollQueryBurger && dishBurger) continue;
+    if (isRollQueryBurger && !dishBurger) continue;
+
     const dishTokens = getTokens(dish.name).sort();
     if (rollTokenStr === dishTokens.join(' ')) {
       return dish;
@@ -93,16 +118,33 @@ export function findDishForRoll(rollName: string, dishes: Dish[]): Dish | undefi
     'лаит', 'делюкс', 'delux', 'груш', 'мигдал', 'манго', 'хияш',
     'вугр', 'креветк', 'тун', 'лосос', 'краб', 'курк', 'чеддер',
     'кунжут', 'икр', 'кранч', 'бонит', 'тартар', 'пандор', 'сакур',
-    'кобе', 'идзум', 'футомак', 'огирк', 'авокадо', 'монте', 'чиз'
+    'кобе', 'идзум', 'футомак', 'огирк', 'авокадо', 'монте', 'чиз',
+    'запечен', 'темпур', 'аляск'
   ];
 
   let bestDish: Dish | null = null;
   let bestScore = -100;
 
   for (const dish of dishes) {
+    const dishBurger = isBurgerDish(dish);
+
+    // Strict isolation: Never match a non-burger roll to a burger, and vice-versa
+    if (!isRollQueryBurger && dishBurger) continue;
+    if (isRollQueryBurger && !dishBurger) continue;
+
     const dishTokens = getTokens(dish.name);
 
     let penalty = 0;
+    let bonus = 0;
+
+    // Mini burger weighting
+    if (isRollQueryBurger) {
+      const isDishMini = dish.name.toLowerCase().includes('міні') || dish.category.toLowerCase().includes('mini');
+      if (isRollQueryMini && isDishMini) bonus += 200;
+      if (!isRollQueryMini && isDishMini) penalty += 200;
+      if (isRollQueryMini && !isDishMini) penalty += 200;
+    }
+
     for (const dk of distinctiveKeys) {
       const inRoll = rollTokens.some(rt => rt.includes(dk) || dk.includes(rt));
       const inDish = dishTokens.some(dt => dt.includes(dk) || dk.includes(dt));
@@ -117,7 +159,7 @@ export function findDishForRoll(rollName: string, dishes: Dish[]): Dish | undefi
       }
     }
 
-    const score = (matched * 40) - penalty;
+    const score = (matched * 40) + bonus - penalty;
     if (score > bestScore) {
       bestScore = score;
       bestDish = dish;

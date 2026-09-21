@@ -65,6 +65,8 @@ describe('Roll to Dish Matcher (Set expansion)', () => {
     expect(findDishForRoll('Макі з креветкою', dishes)?.name).toBe('Хосомакі з креветками 150 г');
     expect(findDishForRoll('Макі із огірком', dishes)?.name).toBe('Хосомакі з огірком 150 г');
     expect(findDishForRoll('Макі із авокадо', dishes)?.name).toBe('Хосомакі з авокадо 150 г');
+    expect(findDishForRoll('Макі з тунцем(40 г)', dishes)?.name).toBe('Хосомакі з тунцем 150 г');
+    expect(findDishForRoll('Макі із запеченим лососем (40 г)', dishes)?.name).toBe('Хосомакі із запеченим лососем 150 г');
   });
 
   it('correctly matches Cheese rolls including Monte-Mare', () => {
@@ -73,17 +75,31 @@ describe('Roll to Dish Matcher (Set expansion)', () => {
     expect(findDishForRoll('Монте маре', dishes)?.name).toBe('Чіз рол Монте-Маре 390 г');
   });
 
-  it('correctly matches rolls in new Set #1', () => {
+  it('correctly matches all rolls in new Set #1', () => {
     expect(findDishForRoll('Філадельфія з лососем', dishes)?.name).toBe('Філадельфія з лососем 290 г');
     expect(findDishForRoll('Філадельфія в кунжуті з креветками', dishes)?.name).toBe('Філадельфія з креветками в кунжуті 280 г');
-    expect(findDishForRoll('Каліфорнія в ікрі класична', dishes)?.name).toBe('Каліфорнія в кунжуті класична 260 г');
+    expect(findDishForRoll('Каліфорнія в ікрі класична', dishes)?.name).toBe('Каліфорнія в ікрі класична 260 г');
     expect(findDishForRoll('Сирний рол з грушею', dishes)?.name).toBe('Філадельфія гриль з грушею 310 г');
+    expect(findDishForRoll('Запечений рол із міксом снігового краба', dishes)?.name).toBe('Запечений рол із міксом снігового краба 340 г');
   });
 
-  it('correctly matches mini burgers in mini burger sets to base burger TTK', () => {
-    expect(findDishForRoll('Міні суші-бургер із запеченим лососем', dishes)?.name).toBe('Суші бургер із запеченим лососем 420 г');
-    expect(findDishForRoll('Міні суші-бургер з креветками', dishes)?.name).toBe('Суші бургер з креветками 400 г');
-    expect(findDishForRoll('Міні суші-бургер з вугрем', dishes)?.name).toBe('Суші бургер з вугрем 420 г');
+  it('correctly matches all rolls in new Set "Супер кілограм" (NEVER burger!)', () => {
+    const matchedUnagi = findDishForRoll('Рол з міксом лосося в унагі-чилі', dishes);
+    expect(matchedUnagi).toBeDefined();
+    expect(matchedUnagi?.name).toBe('Темпура рол з лососем в унагі-чилі 350 г');
+    expect(matchedUnagi?.category).not.toBe('Суші-бургери');
+
+    expect(findDishForRoll('Філадельфія з лососем в кунжуті', dishes)?.name).toBe('Філадельфія з лососем в кунжуті 280 г');
+    expect(findDishForRoll('Аляска рол', dishes)?.name).toBe('Аляска рол 270 г');
+    expect(findDishForRoll('Кранч рол із креветками темпура', dishes)?.name).toBe('Кранч рол з креветками 290 г');
+  });
+
+  it('correctly matches mini burgers in mini burger sets to exact mini burger TTK recipes', () => {
+    expect(findDishForRoll('Міні суші-бургер із запеченим лососем', dishes)?.name).toBe('Міні суші-бургер із запеченим лососем 285 г');
+    expect(findDishForRoll('Міні суші-бургер з креветками', dishes)?.name).toBe('Міні суші-бургер з креветками темпура 290 г');
+    expect(findDishForRoll('Міні суші-бургер з лососем та сніговим крабом', dishes)?.name).toBe('Міні суші-бургер із лососем та сніговим крабом 270 г');
+    expect(findDishForRoll('Міні суші-бургер з лососем в унагі-чилі', dishes)?.name).toBe('Міні суші-бургер з лососем в унагі-чилі 285 г');
+    expect(findDishForRoll('Міні суші-бургер з вугрем', dishes)?.name).toBe('Міні суші-бургер із вугрем 295 г');
   });
 
   it('verifies archive flags are set for archived dishes', () => {
