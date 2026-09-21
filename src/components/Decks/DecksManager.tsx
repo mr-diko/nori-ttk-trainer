@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useApp } from '../../context/AppContext';
+import { searchAndRankItems } from '../../utils/searchMatcher';
+import { Dish } from '../../types/ttk';
 import { Layers, Plus, Trash2, Play, Check, Search, X, Sparkles } from 'lucide-react';
 
 interface DecksManagerProps {
@@ -16,14 +18,19 @@ export const DecksManager: React.FC<DecksManagerProps> = ({ onStudyDeck }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCat, setSelectedCat] = useState<string>('all');
 
-  const filteredDishes = menuData.dishes.filter(d => {
-    if (selectedCat !== 'all' && d.category !== selectedCat) return false;
+  const filteredDishes = useMemo(() => {
     if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase().trim();
-      return d.name.toLowerCase().includes(q) || d.ingredients.some(i => i.name.toLowerCase().includes(q));
+      if (selectedCat !== 'all') {
+        const inCat = searchAndRankItems(menuData.dishes, searchQuery, selectedCat);
+        if (inCat.length > 0) return inCat as Dish[];
+      }
+      return searchAndRankItems(menuData.dishes, searchQuery) as Dish[];
     }
-    return true;
-  });
+    if (selectedCat !== 'all') {
+      return menuData.dishes.filter(d => d.category === selectedCat);
+    }
+    return menuData.dishes;
+  }, [menuData.dishes, searchQuery, selectedCat]);
 
   const handleToggleDish = (dishId: string) => {
     setSelectedDishIds(prev => 

@@ -3,7 +3,8 @@ import { useApp } from '../../context/AppContext';
 import { DishCard } from './DishCard';
 import { PrepCard } from './PrepCard';
 import { SetCard } from './SetCard';
-import { Dish } from '../../types/ttk';
+import { Dish, PrepTech, SetMenu } from '../../types/ttk';
+import { searchAndRankItems } from '../../utils/searchMatcher';
 import { Search, SlidersHorizontal, BookOpen, ChefHat, Package, Sparkles } from 'lucide-react';
 
 interface CatalogViewProps {
@@ -15,67 +16,58 @@ export const CatalogView: React.FC<CatalogViewProps> = ({ onStudyDish }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<'all' | 'new' | 'learning' | 'mastered'>('all');
 
-  // Filtered dishes
+  // Filtered dishes with relevance ranking and smart fallback
   const filteredDishes = useMemo(() => {
-    return menuData.dishes.filter(dish => {
-      // Category filter
-      if (selectedCategory && selectedCategory !== 'all' && dish.category !== selectedCategory) {
-        return false;
-      }
+    let dishes = menuData.dishes;
 
-      // Status filter
-      const prog = cardProgress[dish.id];
-      const status = prog?.status || 'new';
-      if (statusFilter !== 'all' && status !== statusFilter) {
-        return false;
-      }
+    // Status filter
+    if (statusFilter !== 'all') {
+      dishes = dishes.filter(dish => {
+        const prog = cardProgress[dish.id];
+        const status = prog?.status || 'new';
+        return status === statusFilter;
+      });
+    }
 
-      // Search query
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase().trim();
-        const inName = dish.name.toLowerCase().includes(q);
-        const inCategory = dish.category.toLowerCase().includes(q);
-        const inIngredients = dish.ingredients.some(i => i.name.toLowerCase().includes(q));
-        if (!inName && !inCategory && !inIngredients) {
-          return false;
+    if (searchQuery.trim()) {
+      // If category is selected, try within category first
+      if (selectedCategory && selectedCategory !== 'all') {
+        const inCat = searchAndRankItems(dishes, searchQuery, selectedCategory);
+        if (inCat.length > 0) {
+          return inCat as Dish[];
         }
+        // Fallback: search across all categories so matching dishes are never hidden!
       }
+      return searchAndRankItems(dishes, searchQuery) as Dish[];
+    }
 
-      return true;
-    });
+    if (selectedCategory && selectedCategory !== 'all') {
+      dishes = dishes.filter(dish => dish.category === selectedCategory);
+    }
+
+    return dishes;
   }, [menuData.dishes, selectedCategory, statusFilter, searchQuery, cardProgress]);
 
   // Filtered preps
   const filteredPreps = useMemo(() => {
-    if (selectedCategory && selectedCategory !== 'all' && selectedCategory !== 'Заготовки') {
+    if (!searchQuery.trim() && selectedCategory && selectedCategory !== 'all' && selectedCategory !== 'Заготовки') {
       return [];
     }
-    return menuData.preps.filter(prep => {
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase().trim();
-        const inName = prep.name.toLowerCase().includes(q);
-        const inTech = prep.techProcess.toLowerCase().includes(q);
-        const inIng = prep.ingredients.some(i => i.name.toLowerCase().includes(q));
-        if (!inName && !inTech && !inIng) return false;
-      }
-      return true;
-    });
+    if (searchQuery.trim()) {
+      return searchAndRankItems(menuData.preps, searchQuery) as PrepTech[];
+    }
+    return menuData.preps;
   }, [menuData.preps, selectedCategory, searchQuery]);
 
   // Filtered sets
   const filteredSets = useMemo(() => {
-    if (selectedCategory && selectedCategory !== 'all' && selectedCategory !== 'Набори 2026') {
+    if (!searchQuery.trim() && selectedCategory && selectedCategory !== 'all' && selectedCategory !== 'Набори 2026') {
       return [];
     }
-    return menuData.sets.filter(set => {
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase().trim();
-        const inName = set.name.toLowerCase().includes(q);
-        const inRolls = set.rolls.some(r => r.toLowerCase().includes(q));
-        if (!inName && !inRolls) return false;
-      }
-      return true;
-    });
+    if (searchQuery.trim()) {
+      return searchAndRankItems(menuData.sets, searchQuery) as SetMenu[];
+    }
+    return menuData.sets;
   }, [menuData.sets, selectedCategory, searchQuery]);
 
   const totalResults = filteredDishes.length + filteredPreps.length + filteredSets.length;

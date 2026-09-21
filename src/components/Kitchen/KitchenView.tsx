@@ -2,6 +2,7 @@ import React, { useState, useMemo, useRef } from 'react';
 import { useApp } from '../../context/AppContext';
 import { Dish, PrepTech, SetMenu } from '../../types/ttk';
 import { KitchenRecipeSheet } from './KitchenRecipeSheet';
+import { searchAndRankItems } from '../../utils/searchMatcher';
 import { Search, X, Star, Clock, Zap, Sun, Lightbulb, Sparkles, ChevronRight, Package, Utensils } from 'lucide-react';
 
 export const KitchenView: React.FC = () => {
@@ -33,34 +34,25 @@ export const KitchenView: React.FC = () => {
     ];
   }, [menuData]);
 
-  // Filtered items based on search query and category
+  // Filtered items based on search query and category with smart fallback
   const filteredItems = useMemo(() => {
-    let list = allItems;
+    if (!searchQuery.trim()) {
+      if (activeCategory) {
+        return allItems.filter(item => item.category === activeCategory);
+      }
+      return allItems;
+    }
 
+    // When searching: if activeCategory is set, try it first
     if (activeCategory) {
-      list = list.filter(item => item.category === activeCategory);
+      const inCat = searchAndRankItems(allItems, searchQuery, activeCategory);
+      if (inCat.length > 0) {
+        return inCat;
+      }
+      // If 0 results in selected category, automatically search across all categories!
     }
 
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase().trim();
-      list = list.filter(item => {
-        // Name check
-        if (item.name.toLowerCase().includes(q)) return true;
-        // Category check
-        if (item.category.toLowerCase().includes(q)) return true;
-        // Ingredients check (for dishes and preps)
-        if ('ingredients' in item) {
-          if (item.ingredients.some(ing => ing.name.toLowerCase().includes(q))) return true;
-        }
-        // Rolls check (for sets)
-        if ('rolls' in item) {
-          if (item.rolls.some(r => r.toLowerCase().includes(q))) return true;
-        }
-        return false;
-      });
-    }
-
-    return list;
+    return searchAndRankItems(allItems, searchQuery);
   }, [allItems, activeCategory, searchQuery]);
 
   // Pinned items resolved objects
